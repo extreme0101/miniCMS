@@ -3,12 +3,10 @@
 $mbm_config ['use_multiple_db'] = 0;
 
 /****************Webiin DB write holboltiin medeelel*********************/
-$mbm_config ['dbw_host'] = '';
-//$mbm_config ['dbw_host'] = 'localhost';
-$mbm_config ['dbw_name'] = '';
-$mbm_config ['dbw_user'] = '';
-$mbm_config ['dbw_pass'] = '';
-$mbm_config ['dbw_prefix'] = 't_';
+$mbm_config ['dbw_host'] = 'localhost';
+$mbm_config ['dbw_name'] = 'azmn_v3';
+$mbm_config ['dbw_user'] = 'azmn_v3';
+$mbm_config ['dbw_pass'] = 'pass12';
 $mbm_config ['dbw_charset'] = 'utf8';
 /**
  * pdo_mysql: A MySQL driver that uses the pdo_mysql PDO extension.
@@ -27,7 +25,6 @@ $mbm_config ['dbr_host'] = '';
 $mbm_config ['dbr_name'] = '';
 $mbm_config ['dbr_user'] = '';
 $mbm_config ['dbr_pass'] = '';
-$mbm_config ['dbr_prefix'] = 'mbm_';
 $mbm_config ['dbr_charset'] = 'utf8';
 $mbm_config ['dbr_driver'] = 'pdo_mysql'; 
 
@@ -36,7 +33,6 @@ $mbm_config ['dbcw_host'] = '';
 $mbm_config ['dbcw_name'] = '';
 $mbm_config ['dbcw_user'] = '';
 $mbm_config ['dbcw_pass'] = '';
-$mbm_config ['dbcw_prefix'] = '';
 $mbm_config ['dbcw_charset'] = 'utf8';
 $mbm_config ['dbcw_driver'] = 'pdo_mysql'; 
 
@@ -45,6 +41,5 @@ $mbm_config ['dbcr_host'] = '';
 $mbm_config ['dbcr_name'] = '';
 $mbm_config ['dbcr_user'] = '';
 $mbm_config ['dbcr_pass'] = '';
-$mbm_config ['dbcr_prefix'] = '';
 $mbm_config ['dbcr_charset'] = 'utf8';
 $mbm_config ['dbcr_driver'] = 'pdo_mysql'; 

@@ -30,3 +30,10 @@ function is_logged_user(){
     }
     
 }
+
+function get_logged_user_id(){
+    
+//    return $_SESSION['user_id'];
+    
+    return 1;
+}

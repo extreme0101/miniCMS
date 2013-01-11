@@ -7,6 +7,7 @@
  * file that was distributed with this source code.
  */
 $post_vars = Config::get('POST');
+
 if(isset($post_vars['name'])){
     
     $test = new TTest();
