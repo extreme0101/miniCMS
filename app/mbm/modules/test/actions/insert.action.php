@@ -9,10 +9,6 @@
 $post_vars = Config::get('POST');
 
 
-$a = new Model_TTest();
-$a->insert_row();
-
-die();
 if(isset($post_vars['name'])){
     
     $test = new TTest();

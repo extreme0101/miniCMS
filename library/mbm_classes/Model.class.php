@@ -24,7 +24,8 @@ use Doctrine\ORM\EntityRepository,
     Doctrine\ORM\Query\AST,
     Doctrine\DBAL\Types\Type,
     Doctrine\ORM\Mapping\ClassMetadata,
-    Doctrine\ORM\NonUniqueResultException;
+    Doctrine\ORM\NonUniqueResultException,
+    Doctrine\Common\Annotations\AnnotationRegistry;
 
 
 class Model extends Doctrine\ORM\EntityManager{

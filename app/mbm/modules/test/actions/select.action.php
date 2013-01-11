@@ -18,7 +18,7 @@ $qb = $DBR->createQueryBuilder();
 
 //2. heregtei command aa beldej oruulna
 $qb->add('select', 'u')
-   ->add('from', 'TCodes u')
+   ->add('from', 'TTest u')
    ->add('where', 'u.id != ?1')
    ->add('orderBy', 'u.name ASC');
 

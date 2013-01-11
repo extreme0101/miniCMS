@@ -16,6 +16,8 @@
  * @author     BATMUNKH Moltov <contact@batmunkh.com>
  * @version    SVN: $Id 
  */
+use Doctrine\Common\Annotations\AnnotationRegistry;
+
 class Core {
 
     public $include_dir;
@@ -54,7 +56,7 @@ class Core {
          * $this->GET tohiruulahiin umnu duudah shaardlagatai
          */
         $this->initConfig($config);
-        
+
         /**
          * App, module, action uudiig todorhoilno
          * Config::set ashiglaj app,module,action iig onoono
@@ -73,7 +75,7 @@ class Core {
 
 //connect to DB
         $this->initDatabase();
-        
+
 //        $this->user = new User($this->GET);
 
         /**
@@ -103,11 +105,11 @@ class Core {
          * Session-d default lang tohiruulsan tul odoo lang file iig achaalna
          */
         $this->Lang = new Language($this->session->getAttribute('ln'));
-        
-        
+
+
         Config::set('session', $this->session);
-        
-        
+
+
 
         /**
          * App, module uudiig tohiruulah
@@ -118,7 +120,7 @@ class Core {
         $this->config->loadModule($this->GET['module']);
 
         $this->config->loadAction($this->GET['action']);
-        
+
         //Load Twig
         $this->initTemplate();
     }
@@ -206,15 +208,11 @@ class Core {
         //tur disable hiiv
 //        $config->setMetadataCacheImpl($cache);
 //        $config->setQueryCacheImpl($cache);
-
-//        $driverImpl = $config->newDefaultAnnotationDriver(array(LIB_DIR . 'Models'));
-//        $config->setMetadataDriverImpl($driverImpl);
 //mapping (example uses annotations, could be any of XML/YAML or plain PHP)
         Doctrine\Common\Annotations\AnnotationRegistry::registerFile(LIB_DIR . 'mbm_classes/Doctrine/ORM/Mapping/Driver/DoctrineAnnotations.php');
-        $driver = new Doctrine\ORM\Mapping\Driver\AnnotationDriver(
-                new Doctrine\Common\Annotations\AnnotationReader(), array($model_dir)
-        );
-
+//        $driver = new Doctrine\ORM\Mapping\Driver\AnnotationDriver(
+//                new Doctrine\Common\Annotations\AnnotationReader(), array($model_dir)
+//        );
 
         $connectionOptions = array(
             'dbname' => DBW_NAME,
@@ -223,17 +221,28 @@ class Core {
             'host' => DBW_HOST,
             'driver' => DBW_DRIVER,
         );
-        
+
         Config::set('DB_OPTIONS', $connectionOptions);
 
         $em = Doctrine\ORM\EntityManager::create($connectionOptions, $config);
+
+
+        $em->getConnection()->getDatabasePlatform()->registerDoctrineTypeMapping('set', 'string');
+        $em->getConnection()->getDatabasePlatform()->registerDoctrineTypeMapping('enum', 'string');
 
         $helperSet = new Symfony\Component\Console\Helper\HelperSet(array(
             'db' => new \Doctrine\DBAL\Tools\Console\Helper\ConnectionHelper($em->getConnection()),
             'dialog' => new \Symfony\Component\Console\Helper\DialogHelper(),
             'em' => new \Doctrine\ORM\Tools\Console\Helper\EntityManagerHelper($em)
                 ));
-        
+
+
+// fetch metadata
+        $driver = new \Doctrine\ORM\Mapping\Driver\DatabaseDriver(
+                $em->getConnection()->getSchemaManager()
+        );
+        $em->getConfiguration()->setMetadataDriverImpl($driver);
+
         $this->DBW = $em;
         $this->DBR = $em;
         $this->DBCW = $em;

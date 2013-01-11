@@ -1,5 +1,10 @@
 <?php
 
+/*
+ * To change this template, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
 /**
  * This file is part of the miniCMS package.
  * (c) 2005-2012 BATMUNKH Moltov <contact@batmunkh.com>
@@ -11,8 +16,6 @@
 /**
  * Description here
  *
- * @Entity(repositoryClass="TTest")
- * 
  * @package    miniCMS
  * @subpackage -
  * @author     BATMUNKH Moltov <contact@batmunkh.com>
@@ -21,19 +24,18 @@
 
 class Model_TTest extends TTest {
 
+    public $DBW;
+    
     public function Model_TTest() {
+        global $DBW;
         
+        $this->DBW = $DBW;
     }
-    /**
-     * @return ...
-     */
-    public function insert_row(){
+    
+    public function getAllRecords(){
+        $q = $this->findAll();
         
-        $DBW = Config::get('DBW');
-        $aa = new TTest();
-        $aa->setName('a');
-        $aa->setContent('bb');
-        $DBW->persist($aa);
-        $DBW->flush();
+        return $q;
     }
+
 }
