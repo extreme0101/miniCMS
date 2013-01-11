@@ -14,7 +14,7 @@ $mbm_config ['data_dir'] = ABS_DIR.'data'.DS;
 /****************Default utguud*********************/
 $mbm_config ['default_charset'] = 'utf8';
 $mbm_config ['default_lang'] = 'mn';
-$mbm_config ['default_app'] = 'main';
+$mbm_config ['default_app'] = 'm';
 $mbm_config ['default_module'] = 'home';
 $mbm_config ['default_action'] = 'index';
 

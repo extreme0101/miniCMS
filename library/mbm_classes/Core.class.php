@@ -70,7 +70,6 @@ class Core {
         $GLOBALS['GET'] = $this->GET;
 
         include_files(LIB_DIR . 'mbm_functions' . DS);
-        include_files(LIB_DIR . 'oluulaa' . DS);
 
 //connect to DB
         $this->initDatabase();
