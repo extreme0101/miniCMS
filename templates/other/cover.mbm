@@ -1,0 +1,48 @@
+<!-- cover image start -->
+<div class="peculiar_profile_cover">
+    <div class="map-viewport">
+        <!-- map-2 style image h: w: ni zuragni bodit hemjee   -->
+        <div id="map-2" style="width:850px; height:315px;left:-80px; top:-70px;">
+            <img src="/images/user/150.png" width="850" height="315" alt="" class="level" />
+        </div>
+    </div>
+    <a href="#" class="change_cover_image" id="button3">Ковэр зургаа солих</a>
+    <div id="popupContainer3" class="hidden3">
+        <div class="cover_images_change_container">
+            <span class="cover_sub_title">Cover зураг өөрчлөх</span>
+            <div class="cover_image_change_tab">
+                <ul class="clearfix" id="tabs">
+                    <li class="active"><a class="tab-a1" href="#tab3">Галерейгаас</a></li>
+                    <li><a class="tab-a1" href="#tab4">Компьютераас</a></li>
+                    <li><a class="tab-a1" href="#tab5">Өөрийн зурагнаас</a></li>
+                    <li><a class="tab-a1" href="#tab6">Төлбөртэй</a></li>
+                </ul>
+            </div>
+            <div>
+                <div  class="cover_image_tab" id="tab3">
+                    <ul class="made_cover_photo">
+                        <li><a href="#"><img src="/images/user/cover12.png"/></a></li>
+                        <li><a href="#"><img src="/images/user/cover12.png"/></a></li>
+                        <li><a href="#"><img src="/images/user/cover12.png"/></a></li>
+                        <li><a href="#"><img src="/images/user/cover12.png"/></a></li>
+                    </ul>
+                </div>
+
+                <div class="cover_image_tab" id="tab4" style="display:none;">
+                    <input type="file" name="" style="width:300px;float:left;margin-left:6px;margin-top:6px;border:1px solid #212a33">
+                </div>
+                <div class="cover_image_tab" id="tab5" style="display:none;">
+                    Хоосон 3
+                </div>
+                <div class="cover_image_tab" id="tab6" style="display:none;">
+                    Хоосон 4
+                </div>
+            </div>
+            <button class="cancel_button">Болих</button>
+            <button class="save_button">Хадгалах</button>
+        </div>
+    </div>
+    <div id="overlayEffect3"></div>
+    <a href="#" class="profile_big_image"><img src="/images/user/profile_image.png"></a>
+</div>
+<!-- cover image end -->

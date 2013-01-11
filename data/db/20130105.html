@@ -1,0 +1,2429 @@
+
+<!-- saved from url=(0131)file://localhost/Users/batmunkh/Library/Application%20Support/PremiumSoft%20CyberTech/Navicat%20for%20MySQL/oluulaa/tmp-Schema.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"></head>
+<body>
+<h5 align="right" style="color: gray; ">Snapshot on 2013-01-04 21:52:23</h5>
+<h3>Database: oluulaa_db</h3>
+<br>
+<h4>t_action_log</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">bigint(20)</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">code</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">user_id</td>
+	<td width="30%">bigint(20)</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">action</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">content</td>
+	<td width="30%">text</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_admins</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(111) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">code</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">user_id</td>
+	<td width="30%">bigint(20) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">write</td>
+	<td width="30%">tinyint(1) UNSIGNED</td>
+	<td width="15%">Yes</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">delete</td>
+	<td width="30%">tinyint(1) UNSIGNED</td>
+	<td width="15%">Yes</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">added_by</td>
+	<td width="30%">bigint(20) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_ads</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">ads_code</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">min_age</td>
+	<td width="30%">tinyint(3)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">max_age</td>
+	<td width="30%">tinyint(3)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">max_hits</td>
+	<td width="30%">int(11)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">max_field</td>
+	<td width="30%">int(11)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">gender</td>
+	<td width="30%">enum('Female','Male','All')</td>
+	<td width="15%">No</td>
+	<td width="20%">All</td>
+</tr>
+<tr>
+	<td width="35%">html_code</td>
+	<td width="30%">text</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">ads_type</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">views</td>
+	<td width="30%">int(11)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">hits</td>
+	<td width="30%">int(11)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">user_id</td>
+	<td width="30%">bigint(20)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">expire_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_beleg_sent</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">bigint(20) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">sender_user_id</td>
+	<td width="30%">bigint(20)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">reciever_user_id</td>
+	<td width="30%">bigint(20)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">beleg_id</td>
+	<td width="30%">int(11)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">recieved_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_belegs</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">added_by</td>
+	<td width="30%">bigint(20) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">is_free</td>
+	<td width="30%">enum('Yes','No')</td>
+	<td width="15%">Yes</td>
+	<td width="20%">Yes</td>
+</tr>
+<tr>
+	<td width="35%">beleg_type</td>
+	<td width="30%">enum('Photo','Video','Text')</td>
+	<td width="15%">Yes</td>
+	<td width="20%">Photo</td>
+</tr>
+<tr>
+	<td width="35%">beleg_type_code</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">price</td>
+	<td width="30%">float(11,2)</td>
+	<td width="15%">No</td>
+	<td width="20%">0.00</td>
+</tr>
+<tr>
+	<td width="35%">currency_code</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">name</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">comment</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_categories</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">parent_id</td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">depth</td>
+	<td width="30%">tinyint(3) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">lft</td>
+	<td width="30%">int(11)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">rgt</td>
+	<td width="30%">int(11)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">pos</td>
+	<td width="30%">float(11,0) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">code</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">user_id</td>
+	<td width="30%">bigint(20) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">status</td>
+	<td width="30%">enum('Hidden','System_Only','Active','Inactive')</td>
+	<td width="15%">Yes</td>
+	<td width="20%">Inactive</td>
+</tr>
+<tr>
+	<td width="35%">name</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">comment</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">hits</td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_codes</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">name</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">content</td>
+	<td width="30%">text</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">date</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_comments</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(11)</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">code</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">user_id</td>
+	<td width="30%">bigint(20)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">name</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">comment</td>
+	<td width="30%">text</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">ip</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_contents</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(11)</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">code</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">user_id</td>
+	<td width="30%">bigint(20)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">status</td>
+	<td width="30%">enum('Active','Inactive','Pending')</td>
+	<td width="15%">No</td>
+	<td width="20%">Inactive</td>
+</tr>
+<tr>
+	<td width="35%">content_type</td>
+	<td width="30%">enum('Text','Photo','Video')</td>
+	<td width="15%">Yes</td>
+	<td width="20%">Text</td>
+</tr>
+<tr>
+	<td width="35%">title</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">brief</td>
+	<td width="30%">text</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">body</td>
+	<td width="30%">longtext</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">hits</td>
+	<td width="30%">int(11)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">views</td>
+	<td width="30%">int(11)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">published_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_cover_photos</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">code</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">photo_id</td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_event_categories</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">event_id</td>
+	<td width="30%">int(11)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">category_id</td>
+	<td width="30%">int(11)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_event_paid</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">event_id</td>
+	<td width="30%">int(11)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">currency_code</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">price</td>
+	<td width="30%">float(11,2)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">how_to_buy</td>
+	<td width="30%">enum('Phone','Online','Delivery','Yourself')</td>
+	<td width="15%">Yes</td>
+	<td width="20%">Online</td>
+</tr>
+<tr>
+	<td width="35%">where_to_buy_location_code</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_event_subscribers</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">bigint(20)</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">user_id</td>
+	<td width="30%">bigint(20)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">event_id</td>
+	<td width="30%">int(11)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">status</td>
+	<td width="30%">enum('Join','Maybe','Decline')</td>
+	<td width="15%">Yes</td>
+	<td width="20%">Maybe</td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_events</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">bigint(20)</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">user_id</td>
+	<td width="30%">bigint(20) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">event_type</td>
+	<td width="30%">enum('Event','Birthday','Anniversary')</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">photo_code</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">location_code</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">is_free</td>
+	<td width="30%">enum('Yes','No')</td>
+	<td width="15%">Yes</td>
+	<td width="20%">Yes</td>
+</tr>
+<tr>
+	<td width="35%">title</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">content</td>
+	<td width="30%">text</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">organizer_type</td>
+	<td width="30%">enum('Group','Page','Organization','Person','Other')</td>
+	<td width="15%">Yes</td>
+	<td width="20%">Other</td>
+</tr>
+<tr>
+	<td width="35%">organizer_name</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">contact_name</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">contact_phone</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">contact_address</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">contact_facebook</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">contact_twitter</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">other_info</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">event_date</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_favorites</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">user_id</td>
+	<td width="30%">bigint(20) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">favorite_type</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">No</td>
+	<td width="20%">default</td>
+</tr>
+<tr>
+	<td width="35%">pos</td>
+	<td width="30%">float(11,2)</td>
+	<td width="15%">No</td>
+	<td width="20%">0.00</td>
+</tr>
+<tr>
+	<td width="35%">title</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">description</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">url</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">hits</td>
+	<td width="30%">int(11)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_files</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">code</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">user_id</td>
+	<td width="30%">bigint(20) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">mimetype</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">filesize</td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">name</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">domain</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">path</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">protocol</td>
+	<td width="30%">varchar(20)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">hits</td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">downloaded</td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_flags</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">code</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">added_by</td>
+	<td width="30%">bigint(20) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">ip</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">referrar</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_followers</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">follow_type</td>
+	<td width="30%">enum('User','Post','Page')</td>
+	<td width="15%">Yes</td>
+	<td width="20%">User</td>
+</tr>
+<tr>
+	<td width="35%">user_id</td>
+	<td width="30%">bigint(20)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">follower_id</td>
+	<td width="30%">bigint(20)</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_forums</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">code</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">parent_id</td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">depth</td>
+	<td width="30%">tinyint(3)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">is_featured</td>
+	<td width="30%">tinyint(3) UNSIGNED</td>
+	<td width="15%">Yes</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">is_sticky</td>
+	<td width="30%">tinyint(3) UNSIGNED</td>
+	<td width="15%">Yes</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">title</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">description</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_friend_requests</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(10) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">user_id</td>
+	<td width="30%">bigint(20)</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">friend_id</td>
+	<td width="30%">bigint(20)</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">status</td>
+	<td width="30%">enum('Pending','Comfirmed')</td>
+	<td width="15%">No</td>
+	<td width="20%">Pending</td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">confirmed_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_friend_types</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">user_id</td>
+	<td width="30%">bigint(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">post</td>
+	<td width="30%">float(11,2)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">name</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">comment</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_friends</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">bigint(20)</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">friend_type_id</td>
+	<td width="30%">int(11)</td>
+	<td width="15%">Yes</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">friends</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%">,user1_id,user2_id,</td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_group_members</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">group_id</td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">user_id</td>
+	<td width="30%">bigint(20) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">is_confirmed</td>
+	<td width="30%">tinyint(3) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">confirmed_by</td>
+	<td width="30%">bigint(20) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">confirmed_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_groups</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">user_id</td>
+	<td width="30%">bigint(20)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">group_email</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">status</td>
+	<td width="30%">enum('Pending','Active')</td>
+	<td width="15%">No</td>
+	<td width="20%">Pending</td>
+</tr>
+<tr>
+	<td width="35%">name</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">description</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">total_members</td>
+	<td width="30%">int(11)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">privacy</td>
+	<td width="30%">enum('Public','Closed','Secret')</td>
+	<td width="15%">No</td>
+	<td width="20%">Public</td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">updated_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_likes</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">code</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">user_id</td>
+	<td width="30%">bigint(20) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_locations</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">code</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">longtitude</td>
+	<td width="30%">float(5,5)</td>
+	<td width="15%">Yes</td>
+	<td width="20%">0.00000</td>
+</tr>
+<tr>
+	<td width="35%">altitude</td>
+	<td width="30%">float(5,5)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">ip</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">country</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">city</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">other_info</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_messages</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">bigint(20) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">from_user_id</td>
+	<td width="30%">bigint(20) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">to_user_ids</td>
+	<td width="30%">text</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">message_status</td>
+	<td width="30%">varchar(45)</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">subject</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">body</td>
+	<td width="30%">text</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">opened_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_page_members</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">page_id</td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">user_id</td>
+	<td width="30%">bigint(20) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_pages</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">user_id</td>
+	<td width="30%">bigint(20)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">page_username</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">status</td>
+	<td width="30%">enum('Pending','Active')</td>
+	<td width="15%">No</td>
+	<td width="20%">Pending</td>
+</tr>
+<tr>
+	<td width="35%">name</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">description</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">total_likes</td>
+	<td width="30%">int(11)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_photos</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">code</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">user_id</td>
+	<td width="30%">bigint(20) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">filetype</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">width</td>
+	<td width="30%">int(4)</td>
+	<td width="15%">Yes</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">height</td>
+	<td width="30%">int(4)</td>
+	<td width="15%">Yes</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">filesize</td>
+	<td width="30%">int(11)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">domain</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">path</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">protocol</td>
+	<td width="30%">varchar(20)</td>
+	<td width="15%">Yes</td>
+	<td width="20%">http</td>
+</tr>
+<tr>
+	<td width="35%">title</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">comment</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">views</td>
+	<td width="30%">int(11)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">hits</td>
+	<td width="30%">int(11)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">downloaded</td>
+	<td width="30%">int(11)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_pokes</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">user_id</td>
+	<td width="30%">bigint(20) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">to_user_id</td>
+	<td width="30%">bigint(20) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_posts</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">user_id</td>
+	<td width="30%">bigint(20)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">post_type</td>
+	<td width="30%">enum('Text','Photo','Video')</td>
+	<td width="15%">No</td>
+	<td width="20%">Text</td>
+</tr>
+<tr>
+	<td width="35%">content</td>
+	<td width="30%">text</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">code</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">location_code</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">hits</td>
+	<td width="30%">int(11)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">views</td>
+	<td width="30%">int(11)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">likes</td>
+	<td width="30%">int(11)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">shares</td>
+	<td width="30%">int(11)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">post_user_id</td>
+	<td width="30%">int(11)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_privacy</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">code</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">privacy_type</td>
+	<td width="30%">enum('Allow','Disallow')</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">privacy_action</td>
+	<td width="30%">enum('Friend','Friend_type')</td>
+	<td width="15%">No</td>
+	<td width="20%">Friend</td>
+</tr>
+<tr>
+	<td width="35%">privacy_action_value</td>
+	<td width="30%">text</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_relations</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">is_singular</td>
+	<td width="30%">tinyint(1)</td>
+	<td width="15%">Yes</td>
+	<td width="20%">1</td>
+</tr>
+<tr>
+	<td width="35%">name</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">comment</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_sessions</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>sess_id</em></td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">sess_data</td>
+	<td width="30%">text</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">sess_time</td>
+	<td width="30%">time</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_test</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">name</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">content</td>
+	<td width="30%">text</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">date</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_urls</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">bigint(20) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">user_id</td>
+	<td width="30%">bigint(20)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">post_id</td>
+	<td width="30%">bigint(20)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">url</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">title</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">description</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_user_blocks</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">code</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">user_id</td>
+	<td width="30%">bigint(20) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">added_by</td>
+	<td width="30%">bigint(20) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_user_credits</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">bigint(20) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">user_id</td>
+	<td width="30%">bigint(20)</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">income_outcome</td>
+	<td width="30%">tinyint(4)</td>
+	<td width="15%">No</td>
+	<td width="20%">-1</td>
+</tr>
+<tr>
+	<td width="35%">amount</td>
+	<td width="30%">float</td>
+	<td width="15%">Yes</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">comment</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">admin_comment</td>
+	<td width="30%">text</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_user_family</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">user_id</td>
+	<td width="30%">bigint(20) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">relation_friend_id</td>
+	<td width="30%">bigint(20) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">relation_id</td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">status</td>
+	<td width="30%">enum('Pending','Confirmed','Denied')</td>
+	<td width="15%">Yes</td>
+	<td width="20%">Pending</td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_user_locations</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">user_id</td>
+	<td width="30%">bigint(20)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">location_code</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_user_profiles</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(11)</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">user_id</td>
+	<td width="30%">bigint(20)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">name</td>
+	<td width="30%">varchar(45)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">value</td>
+	<td width="30%">text</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">date</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">updated_at</td>
+	<td width="30%">date</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">item_type</td>
+	<td width="30%">varchar(10)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_users</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">bigint(20)</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">token</td>
+	<td width="30%">varchar(64)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">email</td>
+	<td width="30%">varchar(45)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">username</td>
+	<td width="30%">varchar(45)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">password</td>
+	<td width="30%">varchar(45)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">salt</td>
+	<td width="30%">varchar(45)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">hash_function</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">date</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">confirmed_at</td>
+	<td width="30%">date</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">is_confirmed</td>
+	<td width="30%">tinyint(1) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">user_type</td>
+	<td width="30%">enum('User','Author','Superadmin')</td>
+	<td width="15%">Yes</td>
+	<td width="20%">User</td>
+</tr>
+</tbody></table>
+<br>
+<h4>t_videos</h4>
+<table border="1" width="75%">
+<tbody><tr>
+	<th width="35%">Field</th>
+	<th width="30%">Type</th>
+	<th width="15%">Allow Null</th>
+	<th width="20%">Default Value</th>
+</tr>
+<tr>
+	<td width="35%" style="text-decoration: underline"><em>id</em></td>
+	<td width="30%">int(11) UNSIGNED</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">code</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">user_id</td>
+	<td width="30%">bigint(20)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">filetype</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">filesize</td>
+	<td width="30%">int(11)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">duration</td>
+	<td width="30%">int(11)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+<tr>
+	<td width="35%">domain</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">path</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">protocol</td>
+	<td width="30%">varchar(20)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">title</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">No</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">comment</td>
+	<td width="30%">varchar(255)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">views</td>
+	<td width="30%">int(11)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">hits</td>
+	<td width="30%">int(11)</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">created_at</td>
+	<td width="30%">datetime</td>
+	<td width="15%">Yes</td>
+	<td width="20%"></td>
+</tr>
+<tr>
+	<td width="35%">downloaded</td>
+	<td width="30%">int(11)</td>
+	<td width="15%">No</td>
+	<td width="20%">0</td>
+</tr>
+</tbody></table>
+
+
+</body></html>

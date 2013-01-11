@@ -1,0 +1,6 @@
+cd my_project
+git init
+git add *
+git commit -m "My initial commit message"
+git remote add origin https://github.com/mongolia/miniCMSv3.git
+git push -u origin master

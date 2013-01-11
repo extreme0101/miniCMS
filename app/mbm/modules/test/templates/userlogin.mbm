@@ -1,0 +1,7 @@
+{#{dump(result)}#}
+{% autoescape false %}
+{{form}}
+{% endautoescape %}
+
+<h2>Session</h2>
+{{dump(sessions)}}

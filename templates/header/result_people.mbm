@@ -1,0 +1,20 @@
+<span class="humuus">Хүмүүс</span>
+<a href="#" class="all_humuus">Бүгд</a>
+<ul class="humuus_ul">
+    <li>
+        <img class="searchresults_img" src="images/user/sender_img.png"/>
+        <a href="#" class="searchresults_name">Бат-Очирын Аригуун</a>
+        <p class="same_friends">5 ижил найзтай</p>
+        <a href="#" class="place">Улаанбаатар, Монгол</a>
+        <a href="#" class="chat_icon"></a>
+        <a href="#" class="message_icon"></a>
+    </li>
+    <li>
+        <img class="searchresults_img" src="images/user/sender_img.png"/>
+        <a href="#" class="searchresults_name">Бат-Очирын Аригуун</a>
+        <p class="same_friends">5 ижил найзтай</p>
+        <a href="#" class="place">Улаанбаатар, Монгол</a>
+        <a href="#" class="chat_icon"></a>
+        <a href="#" class="message_icon"></a>
+    </li>
+</ul>

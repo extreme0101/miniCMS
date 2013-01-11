@@ -1,0 +1,855 @@
+
+<div class="sub_left_bar">
+<div class="circular_container">
+    <a href="#" class="given_name">Тулга Даваахүү</a>
+    <ul>
+        <li><a href="#">WebStore-д Дизайнер </a></li>
+        <li><a href="#">ШУТИС-КтМС төгссөн</a></li>
+        <li><a href="#">Улаанбаатар хотод амьдар</a></li>
+        <li><a href="#">11-р сарын 5-нд төрсөн</a></li>
+    </ul>
+    <a href="#" class="circular_more">Илүү</a>
+</div>
+<div class="online_gift_container">
+    <div class="online_gift_header">
+        <span>Бэлэг</span>
+        <a href="#">55</a>
+    </div>
+    <div class="online_gift">
+        <ul>
+            <li><a id="button4" href="#"><img src="/images/gift/gift1.png"/></a></li>
+            <li><a id="button4" href="#"><img src="/images/gift/gift2.png"/></a></li>
+            <li><a id="button4" href="#"><img src="/images/gift/gift1.png"/></a></li>
+        </ul>
+    </div>
+    <a href="#" class="online_gift_send" id="button4">Бэлэг илгээх</a>
+    <div id="popupContainer4" class="hidden4">
+        <div class="send_online_gift_contrainer">
+            <div class="send_online_gift_left">
+                <span class="send_online_gift_sub_title">Бэлэг илгээх</span>
+                <span class="send_online_gift_img_title">Сонгосон бэлэг:</span>
+                <a href="#" class="send_online_gift_chose_img"><img src="/images/gift/big_gif.png"/></a>
+                <textarea placeholder="Захидал нэмэх..." name="send_gift_message" onClick="this.style.color = '#222b33'" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Захидал нэмэх...'" class="send_gift_message"></textarea>
+                <label><input type="checkbox" name="just_sender_see" class="just_sender_see"/>Хүлээн авагчид нэрээ харуулах.</label>
+                <button class="send_button">Илгээх</button>
+                <button class="cancel_button">Болих</button>
+            </div>
+            <div class="send_online_gift_right">
+                <ul class="online_gift_list">
+                    <li><a href="#"><img src="/images/gift/gift2.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift1.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift2.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift1.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift2.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift1.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift2.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift1.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift2.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift1.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift2.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift1.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift2.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift1.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift2.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift1.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift2.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift1.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift2.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift1.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift2.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift1.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift2.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift1.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift2.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift1.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift2.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift1.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift2.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift1.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift2.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift1.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift2.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift1.png"/></a></li>
+                    <li><a href="#"><img src="/images/gift/gift2.png"/></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="overlayEffect4"></div>
+</div>
+<!-- friend list start -->
+<div class="friend_list_container">
+<div class="friend_list_header">
+    <span>Найзууд</span>
+    <a href="#">540</a>
+</div>
+<div class="online_friends_container">
+<span class="online">Онлайнд байгаа</span>
+<a href="#" class="how_many1">48</a>
+<div class="online_friend_list">
+    <span class="subtitle">Онлайнд байгаа</span>
+    <div id="scrollbar4">
+        <div class="scrollbar"><div class="track"><div class="thumb"></div></div></div>
+        <div class="viewport">
+            <div class="overview">
+                <ul class="online_friend_tool">
+                    <li>
+                        <a href="#" class="friend_list_proper_img"><img src="/images/user/40.png"/></a>
+                        <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                        <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                        <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                        <button class="add_friend">Найз болох</button>
+                        <button class="message_send">Зурвас бичих</button>
+                    </li>
+                    <li>
+                        <a href="#" class="friend_list_proper_img"><img src="/images/user/40.png"/></a>
+                        <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                        <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                        <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                        <button class="add_friend">Найз болох</button>
+                        <button class="message_send">Зурвас бичих</button>
+                    </li>
+                    <li>
+                        <a href="#" class="friend_list_proper_img"><img src="/images/user/40.png"/></a>
+                        <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                        <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                        <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                        <button class="add_friend">Найз болох</button>
+                        <button class="message_send">Зурвас бичих</button>
+                    </li>
+                    <li>
+                        <a href="#" class="friend_list_proper_img"><img src="/images/user/40.png"/></a>
+                        <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                        <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                        <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                        <button class="add_friend">Найз болох</button>
+                        <button class="message_send">Зурвас бичих</button>
+                    </li>
+                    <li>
+                        <a href="#" class="friend_list_proper_img"><img src="/images/user/40.png"/></a>
+                        <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                        <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                        <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                        <button class="add_friend">Найз болох</button>
+                        <button class="message_send">Зурвас бичих</button>
+                    </li>
+                    <li>
+                        <a href="#" class="friend_list_proper_img"><img src="/images/user/40.png"/></a>
+                        <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                        <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                        <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                        <button class="add_friend">Найз болох</button>
+                        <button class="message_send">Зурвас бичих</button>
+                    </li>
+                    <li>
+                        <a href="#" class="friend_list_proper_img"><img src="/images/user/40.png"/></a>
+                        <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                        <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                        <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                        <button class="add_friend">Найз болох</button>
+                        <button class="message_send">Зурвас бичих</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</div>
+<ul class="sub">
+    <li>
+        <div class="hover_tooltip_container">
+            <a href="#" class="tooltip_click_class_up_down"><img src="/images/user/55_55.png"/></a>
+            <div class="tooltip_popup_div_up_down">
+                <div class="friend_list_popup">
+                    <a href="#" class="friend_list_proper_img"><img src="/images/user/68_68.png"/></a>
+                    <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                    <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                    <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                    <div class="friend_list_popup_footer">
+                        <div style="width:90px;left:10px;top:8px;position:relative;float:left;">
+                            <select class="select" title="Гэрийхэн">
+                                <option>Гэрийхэн</option>
+                                <option>Найзууд</option>
+                                <option>Ажлын</option>
+                            </select>
+                        </div>
+                        <ul>
+                            <a href="#" class="same_friends">5 ижил найзтай</a>
+                            <li><a href="#"><img src="/images/user/44_44.png"/></a></li>
+                            <li><a href="#"><img src="/images/user/44_44.png"/></a></li>
+                            <li><a href="#"><img src="/images/user/44_44.png"/></a></li>
+                        </ul>
+                        <button class="add_friend">Найз болох</button>
+                        <button class="message_send">Зурвас бичих</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="hover_tooltip_container">
+            <a href="#" class="tooltip_click_class_up_down"><img src="/images/user/55_55.png"/></a>
+            <div class="tooltip_popup_div_up_down">
+                <div class="friend_list_popup">
+                    <a href="#" class="friend_list_proper_img"><img src="/images/user/68_68.png"/></a>
+                    <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                    <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                    <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                    <div class="friend_list_popup_footer">
+                        <div style="width:90px;left:10px;top:8px;position:relative;float:left;">
+                            <select class="select" title="Гэрийхэн">
+                                <option>Гэрийхэн</option>
+                                <option>Найзууд</option>
+                                <option>Ажлын</option>
+                            </select>
+                        </div>
+                        <ul>
+                            <a href="#" class="same_friends">5 ижил найзтай</a>
+                            <li><a href="#"><img src="/images/user/44_44.png"/></a></li>
+                            <li><a href="#"><img src="/images/user/44_44.png"/></a></li>
+                            <li><a href="#"><img src="/images/user/44_44.png"/></a></li>
+                        </ul>
+                        <button class="add_friend">Найз болох</button>
+                        <button class="message_send">Зурвас бичих</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="hover_tooltip_container">
+            <a href="#" class="tooltip_click_class_up_down"><img src="/images/user/55_55.png"/></a>
+            <div class="tooltip_popup_div_up_down">
+                <div class="friend_list_popup">
+                    <a href="#" class="friend_list_proper_img"><img src="/images/user/68_68.png"/></a>
+                    <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                    <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                    <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                    <div class="friend_list_popup_footer">
+                        <div style="width:90px;left:10px;top:8px;position:relative;float:left;">
+                            <select class="select" title="Гэрийхэн">
+                                <option>Гэрийхэн</option>
+                                <option>Найзууд</option>
+                                <option>Ажлын</option>
+                            </select>
+                        </div>
+                        <ul>
+                            <a href="#" class="same_friends">5 ижил найзтай</a>
+                            <li><a href="#"><img src="/images/user/44_44.png"/></a></li>
+                            <li><a href="#"><img src="/images/user/44_44.png"/></a></li>
+                            <li><a href="#"><img src="/images/user/44_44.png"/></a></li>
+                        </ul>
+                        <button class="add_friend">Найз болох</button>
+                        <button class="message_send">Зурвас бичих</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="hover_tooltip_container">
+            <a href="#" class="tooltip_click_class_up_down"><img src="/images/user/55_55.png"/></a>
+            <div class="tooltip_popup_div_up_down">
+                <div class="friend_list_popup">
+                    <a href="#" class="friend_list_proper_img"><img src="/images/user/68_68.png"/></a>
+                    <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                    <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                    <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                    <div class="friend_list_popup_footer">
+                        <div style="width:90px;left:10px;top:8px;position:relative;float:left;">
+                            <select class="select" title="Гэрийхэн">
+                                <option>Гэрийхэн</option>
+                                <option>Найзууд</option>
+                                <option>Ажлын</option>
+                            </select>
+                        </div>
+                        <ul>
+                            <a href="#" class="same_friends">5 ижил найзтай</a>
+                            <li><a href="#"><img src="/images/user/44_44.png"/></a></li>
+                            <li><a href="#"><img src="/images/user/44_44.png"/></a></li>
+                            <li><a href="#"><img src="/images/user/44_44.png"/></a></li>
+                        </ul>
+                        <button class="add_friend">Найз болох</button>
+                        <button class="message_send">Зурвас бичих</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="hover_tooltip_container">
+            <a href="#" class="tooltip_click_class_up_down"><img src="/images/user/55_55.png"/></a>
+            <div class="tooltip_popup_div_up_down">
+                <div class="friend_list_popup">
+                    <a href="#" class="friend_list_proper_img"><img src="/images/user/68_68.png"/></a>
+                    <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                    <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                    <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                    <div class="friend_list_popup_footer">
+                        <div style="width:90px;left:10px;top:8px;position:relative;float:left;">
+                            <select class="select" title="Гэрийхэн">
+                                <option>Гэрийхэн</option>
+                                <option>Найзууд</option>
+                                <option>Ажлын</option>
+                            </select>
+                        </div>
+                        <ul>
+                            <a href="#" class="same_friends">5 ижил найзтай</a>
+                            <li><a href="#"><img src="/images/user/44_44.png"/></a></li>
+                            <li><a href="#"><img src="/images/user/44_44.png"/></a></li>
+                            <li><a href="#"><img src="/images/user/44_44.png"/></a></li>
+                        </ul>
+                        <button class="add_friend">Найз болох</button>
+                        <button class="message_send">Зурвас бичих</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="hover_tooltip_container">
+            <a href="#" class="tooltip_click_class_up_down"><img src="/images/user/55_55.png"/></a>
+            <div class="tooltip_popup_div_up_down">
+                <div class="friend_list_popup">
+                    <a href="#" class="friend_list_proper_img"><img src="/images/user/68_68.png"/></a>
+                    <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                    <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                    <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                    <div class="friend_list_popup_footer">
+                        <div style="width:90px;left:10px;top:8px;position:relative;float:left;">
+                            <select class="select" title="Гэрийхэн">
+                                <option>Гэрийхэн</option>
+                                <option>Найзууд</option>
+                                <option>Ажлын</option>
+                            </select>
+                        </div>
+                        <ul>
+                            <a href="#" class="same_friends">5 ижил найзтай</a>
+                            <li><a href="#"><img src="/images/user/44_44.png"/></a></li>
+                            <li><a href="#"><img src="/images/user/44_44.png"/></a></li>
+                            <li><a href="#"><img src="/images/user/44_44.png"/></a></li>
+                        </ul>
+                        <button class="add_friend">Найз болох</button>
+                        <button class="message_send">Зурвас бичих</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+</ul>
+<a href="#" class="online_friend_see_all">Илүү</a>
+</div>
+<div class="online_friends_container">
+<span class="online1">Ажлыхан</span>
+<a href="#" class="how_many2">48</a>
+<div class="online_job_friend_list">
+    <span class="subtitle">Ажлыхан</span>
+    <div id="scrollbar5">
+        <div class="scrollbar"><div class="track"><div class="thumb"></div></div></div>
+        <div class="viewport">
+            <div class="overview">
+                <ul class="online_friend_tool">
+                    <li>
+                        <a href="#" class="friend_list_proper_img"><img src="/images/user/40.png"/></a>
+                        <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                        <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                        <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                        <button class="add_friend">Найз болох</button>
+                        <button class="message_send">Зурвас бичих</button>
+                    </li>
+                    <li>
+                        <a href="#" class="friend_list_proper_img"><img src="/images/user/40.png"/></a>
+                        <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                        <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                        <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                        <button class="add_friend">Найз болох</button>
+                        <button class="message_send">Зурвас бичих</button>
+                    </li>
+                    <li>
+                        <a href="#" class="friend_list_proper_img"><img src="/images/user/40.png"/></a>
+                        <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                        <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                        <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                        <button class="add_friend">Найз болох</button>
+                        <button class="message_send">Зурвас бичих</button>
+                    </li>
+                    <li>
+                        <a href="#" class="friend_list_proper_img"><img src="/images/user/40.png"/></a>
+                        <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                        <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                        <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                        <button class="add_friend">Найз болох</button>
+                        <button class="message_send">Зурвас бичих</button>
+                    </li>
+                    <li>
+                        <a href="#" class="friend_list_proper_img"><img src="/images/user/40.png"/></a>
+                        <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                        <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                        <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                        <button class="add_friend">Найз болох</button>
+                        <button class="message_send">Зурвас бичих</button>
+                    </li>
+                    <li>
+                        <a href="#" class="friend_list_proper_img"><img src="/images/user/40.png"/></a>
+                        <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                        <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                        <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                        <button class="add_friend">Найз болох</button>
+                        <button class="message_send">Зурвас бичих</button>
+                    </li>
+                    <li>
+                        <a href="#" class="friend_list_proper_img"><img src="/images/user/40.png"/></a>
+                        <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                        <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                        <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                        <button class="add_friend">Найз болох</button>
+                        <button class="message_send">Зурвас бичих</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--                                <ul class="sub">
+                                    <li>
+                                        <div class="hover_tooltip_container">
+                                            <a href="#" class="tooltip_click_class_up_down"><img src="/images/55_55.png"/></a>
+                                            <div class="tooltip_popup_div_up_down">
+                                                <div class="friend_list_popup">
+                                                    <a href="#" class="friend_list_proper_img"><img src="/images/68_68.png"/></a>
+                                                    <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                                                    <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                                                    <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                                                    <div class="friend_list_popup_footer">
+                                                        <div style="width:90px;left:10px;top:8px;position:relative;float:left;">
+                                                            <select class="select" title="Гэрийхэн">
+                                                                <option>Гэрийхэн</option>
+                                                                <option>Найзууд</option>
+                                                                <option>Ажлын</option>
+                                                            </select>
+                                                        </div>
+                                                        <ul>
+                                                            <a href="#" class="same_friends">5 ижил найзтай</a>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                        </ul>
+                                                        <button class="add_friend">Найз болох</button>
+                                                        <button class="message_send">Зурвас бичих</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="hover_tooltip_container">
+                                            <a href="#" class="tooltip_click_class_up_down"><img src="/images/55_55.png"/></a>
+                                            <div class="tooltip_popup_div_up_down">
+                                                <div class="friend_list_popup">
+                                                    <a href="#" class="friend_list_proper_img"><img src="/images/68_68.png"/></a>
+                                                    <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                                                    <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                                                    <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                                                    <div class="friend_list_popup_footer">
+                                                        <div style="width:90px;left:10px;top:8px;position:relative;float:left;">
+                                                            <select class="select" title="Гэрийхэн">
+                                                                <option>Гэрийхэн</option>
+                                                                <option>Найзууд</option>
+                                                                <option>Ажлын</option>
+                                                            </select>
+                                                        </div>
+                                                        <ul>
+                                                            <a href="#" class="same_friends">5 ижил найзтай</a>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                        </ul>
+                                                        <button class="add_friend">Найз болох</button>
+                                                        <button class="message_send">Зурвас бичих</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="hover_tooltip_container">
+                                            <a href="#" class="tooltip_click_class_up_down"><img src="/images/55_55.png"/></a>
+                                            <div class="tooltip_popup_div_up_down">
+                                                 <div class="friend_list_popup">
+                                                    <a href="#" class="friend_list_proper_img"><img src="/images/68_68.png"/></a>
+                                                    <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                                                    <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                                                    <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                                                    <div class="friend_list_popup_footer">
+                                                        <div style="width:90px;left:10px;top:8px;position:relative;float:left;">
+                                                            <select class="select" title="Гэрийхэн">
+                                                                <option>Гэрийхэн</option>
+                                                                <option>Найзууд</option>
+                                                                <option>Ажлын</option>
+                                                            </select>
+                                                        </div>
+                                                        <ul>
+                                                            <a href="#" class="same_friends">5 ижил найзтай</a>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                        </ul>
+                                                        <button class="add_friend">Найз болох</button>
+                                                        <button class="message_send">Зурвас бичих</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="hover_tooltip_container">
+                                            <a href="#" class="tooltip_click_class_up_down"><img src="/images/55_55.png"/></a>
+                                            <div class="tooltip_popup_div_up_down">
+                                                <div class="friend_list_popup">
+                                                    <a href="#" class="friend_list_proper_img"><img src="/images/68_68.png"/></a>
+                                                    <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                                                    <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                                                    <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                                                    <div class="friend_list_popup_footer">
+                                                        <div style="width:90px;left:10px;top:8px;position:relative;float:left;">
+                                                            <select class="select" title="Гэрийхэн">
+                                                                <option>Гэрийхэн</option>
+                                                                <option>Найзууд</option>
+                                                                <option>Ажлын</option>
+                                                            </select>
+                                                        </div>
+                                                        <ul>
+                                                            <a href="#" class="same_friends">5 ижил найзтай</a>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                        </ul>
+                                                        <button class="add_friend">Найз болох</button>
+                                                        <button class="message_send">Зурвас бичих</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="hover_tooltip_container">
+                                            <a href="#" class="tooltip_click_class_up_down"><img src="/images/55_55.png"/></a>
+                                            <div class="tooltip_popup_div_up_down">
+                                                 <div class="friend_list_popup">
+                                                    <a href="#" class="friend_list_proper_img"><img src="/images/68_68.png"/></a>
+                                                    <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                                                    <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                                                    <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                                                    <div class="friend_list_popup_footer">
+                                                        <div style="width:90px;left:10px;top:8px;position:relative;float:left;">
+                                                            <select class="select" title="Гэрийхэн">
+                                                                <option>Гэрийхэн</option>
+                                                                <option>Найзууд</option>
+                                                                <option>Ажлын</option>
+                                                            </select>
+                                                        </div>
+                                                        <ul>
+                                                            <a href="#" class="same_friends">5 ижил найзтай</a>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                        </ul>
+                                                        <button class="add_friend">Найз болох</button>
+                                                        <button class="message_send">Зурвас бичих</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="hover_tooltip_container">
+                                            <a href="#" class="tooltip_click_class_up_down"><img src="/images/55_55.png"/></a>
+                                            <div class="tooltip_popup_div_up_down">
+                                                <div class="friend_list_popup">
+                                                    <a href="#" class="friend_list_proper_img"><img src="/images/68_68.png"/></a>
+                                                    <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                                                    <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                                                    <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                                                    <div class="friend_list_popup_footer">
+                                                        <div style="width:90px;left:10px;top:8px;position:relative;float:left;">
+                                                            <select class="select" title="Гэрийхэн">
+                                                                <option>Гэрийхэн</option>
+                                                                <option>Найзууд</option>
+                                                                <option>Ажлын</option>
+                                                            </select>
+                                                        </div>
+                                                        <ul>
+                                                            <a href="#" class="same_friends">5 ижил найзтай</a>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                        </ul>
+                                                        <button class="add_friend">Найз болох</button>
+                                                        <button class="message_send">Зурвас бичих</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a href="#" class="online_friend_see_all">Илүү</a>-->
+</div>
+<div class="online_friends_container">
+<span class="online1">Гэр бүлийхэн</span>
+<a href="#" class="how_many3">48</a>
+<div class="online_family_list">
+    <span class="subtitle">Гэр бүлийхэн</span>
+    <div id="scrollbar6">
+        <div class="scrollbar"><div class="track"><div class="thumb"></div></div></div>
+        <div class="viewport">
+            <div class="overview">
+                <ul class="online_friend_tool">
+                    <li>
+                        <a href="#" class="friend_list_proper_img"><img src="/images/user/40.png"/></a>
+                        <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                        <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                        <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                        <button class="add_friend">Найз болох</button>
+                        <button class="message_send">Зурвас бичих</button>
+                    </li>
+                    <li>
+                        <a href="#" class="friend_list_proper_img"><img src="/images/user/40.png"/></a>
+                        <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                        <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                        <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                        <button class="add_friend">Найз болох</button>
+                        <button class="message_send">Зурвас бичих</button>
+                    </li>
+                    <li>
+                        <a href="#" class="friend_list_proper_img"><img src="/images/user/40.png"/></a>
+                        <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                        <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                        <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                        <button class="add_friend">Найз болох</button>
+                        <button class="message_send">Зурвас бичих</button>
+                    </li>
+                    <li>
+                        <a href="#" class="friend_list_proper_img"><img src="/images/user/40.png"/></a>
+                        <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                        <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                        <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                        <button class="add_friend">Найз болох</button>
+                        <button class="message_send">Зурвас бичих</button>
+                    </li>
+                    <li>
+                        <a href="#" class="friend_list_proper_img"><img src="/images/user/40.png"/></a>
+                        <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                        <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                        <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                        <button class="add_friend">Найз болох</button>
+                        <button class="message_send">Зурвас бичих</button>
+                    </li>
+                    <li>
+                        <a href="#" class="friend_list_proper_img"><img src="/images/user/40.png"/></a>
+                        <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                        <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                        <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                        <button class="add_friend">Найз болох</button>
+                        <button class="message_send">Зурвас бичих</button>
+                    </li>
+                    <li>
+                        <a href="#" class="friend_list_proper_img"><img src="/images/user/40.png"/></a>
+                        <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                        <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                        <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                        <button class="add_friend">Найз болох</button>
+                        <button class="message_send">Зурвас бичих</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!--                                <ul class="sub">
+                                    <li>
+                                        <div class="hover_tooltip_container">
+                                            <a href="#" class="tooltip_click_class_up_down"><img src="/images/55_55.png"/></a>
+                                            <div class="tooltip_popup_div_up_down">
+                                                <div class="friend_list_popup">
+                                                    <a href="#" class="friend_list_proper_img"><img src="/images/68_68.png"/></a>
+                                                    <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                                                    <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                                                    <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                                                    <div class="friend_list_popup_footer">
+                                                        <div style="width:90px;left:10px;top:8px;position:relative;float:left;">
+                                                            <select class="select" title="Гэрийхэн">
+                                                                <option>Гэрийхэн</option>
+                                                                <option>Найзууд</option>
+                                                                <option>Ажлын</option>
+                                                            </select>
+                                                        </div>
+                                                        <ul>
+                                                            <a href="#" class="same_friends">5 ижил найзтай</a>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                        </ul>
+                                                        <button class="add_friend">Найз болох</button>
+                                                        <button class="message_send">Зурвас бичих</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="hover_tooltip_container">
+                                            <a href="#" class="tooltip_click_class_up_down"><img src="/images/55_55.png"/></a>
+                                            <div class="tooltip_popup_div_up_down">
+                                                 <div class="friend_list_popup">
+                                                    <a href="#" class="friend_list_proper_img"><img src="/images/68_68.png"/></a>
+                                                    <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                                                    <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                                                    <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                                                    <div class="friend_list_popup_footer">
+                                                        <div style="width:90px;left:10px;top:8px;position:relative;float:left;">
+                                                            <select class="select" title="Гэрийхэн">
+                                                                <option>Гэрийхэн</option>
+                                                                <option>Найзууд</option>
+                                                                <option>Ажлын</option>
+                                                            </select>
+                                                        </div>
+                                                        <ul>
+                                                            <a href="#" class="same_friends">5 ижил найзтай</a>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                        </ul>
+                                                        <button class="add_friend">Найз болох</button>
+                                                        <button class="message_send">Зурвас бичих</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="hover_tooltip_container">
+                                            <a href="#" class="tooltip_click_class_up_down"><img src="/images/55_55.png"/></a>
+                                            <div class="tooltip_popup_div_up_down">
+                                                 <div class="friend_list_popup">
+                                                    <a href="#" class="friend_list_proper_img"><img src="/images/68_68.png"/></a>
+                                                    <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                                                    <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                                                    <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                                                    <div class="friend_list_popup_footer">
+                                                        <div style="width:90px;left:10px;top:8px;position:relative;float:left;">
+                                                            <select class="select" title="Гэрийхэн">
+                                                                <option>Гэрийхэн</option>
+                                                                <option>Найзууд</option>
+                                                                <option>Ажлын</option>
+                                                            </select>
+                                                        </div>
+                                                        <ul>
+                                                            <a href="#" class="same_friends">5 ижил найзтай</a>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                        </ul>
+                                                        <button class="add_friend">Найз болох</button>
+                                                        <button class="message_send">Зурвас бичих</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="hover_tooltip_container">
+                                            <a href="#" class="tooltip_click_class_up_down"><img src="/images/55_55.png"/></a>
+                                            <div class="tooltip_popup_div_up_down">
+                                                 <div class="friend_list_popup">
+                                                    <a href="#" class="friend_list_proper_img"><img src="/images/68_68.png"/></a>
+                                                    <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                                                    <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                                                    <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                                                    <div class="friend_list_popup_footer">
+                                                        <div style="width:90px;left:10px;top:8px;position:relative;float:left;">
+                                                            <select class="select" title="Гэрийхэн">
+                                                                <option>Гэрийхэн</option>
+                                                                <option>Найзууд</option>
+                                                                <option>Ажлын</option>
+                                                            </select>
+                                                        </div>
+                                                        <ul>
+                                                            <a href="#" class="same_friends">5 ижил найзтай</a>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                        </ul>
+                                                        <button class="add_friend">Найз болох</button>
+                                                        <button class="message_send">Зурвас бичих</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="hover_tooltip_container">
+                                            <a href="#" class="tooltip_click_class_up_down"><img src="/images/55_55.png"/></a>
+                                            <div class="tooltip_popup_div_up_down">
+                                                 <div class="friend_list_popup">
+                                                    <a href="#" class="friend_list_proper_img"><img src="/images/68_68.png"/></a>
+                                                    <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                                                    <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                                                    <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                                                    <div class="friend_list_popup_footer">
+                                                        <div style="width:90px;left:10px;top:8px;position:relative;float:left;">
+                                                            <select class="select" title="Гэрийхэн">
+                                                                <option>Гэрийхэн</option>
+                                                                <option>Найзууд</option>
+                                                                <option>Ажлын</option>
+                                                            </select>
+                                                        </div>
+                                                        <ul>
+                                                            <a href="#" class="same_friends">5 ижил найзтай</a>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                        </ul>
+                                                        <button class="add_friend">Найз болох</button>
+                                                        <button class="message_send">Зурвас бичих</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="hover_tooltip_container">
+                                            <a href="#" class="tooltip_click_class_up_down"><img src="/images/55_55.png"/></a>
+                                            <div class="tooltip_popup_div_up_down">
+                                                 <div class="friend_list_popup">
+                                                    <a href="#" class="friend_list_proper_img"><img src="/images/68_68.png"/></a>
+                                                    <a href="#" class="friend_list_proper_name">Тулга Даваахүү</a>
+                                                    <a href="#" class="friend_list_proper_school">ШУТИС-КтМС төгссөн</a>
+                                                    <a href="#" class="friend_list_proper_occupation">WebStore-д Дизайнер</a>
+                                                    <div class="friend_list_popup_footer">
+                                                        <div style="width:90px;left:10px;top:8px;position:relative;float:left;">
+                                                            <select class="select" title="Гэрийхэн">
+                                                                <option>Гэрийхэн</option>
+                                                                <option>Найзууд</option>
+                                                                <option>Ажлын</option>
+                                                            </select>
+                                                        </div>
+                                                        <ul>
+                                                            <a href="#" class="same_friends">5 ижил найзтай</a>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                            <li><a href="#"><img src="/images/icon/44_44.png"/></a></li>
+                                                        </ul>
+                                                        <button class="add_friend">Найз болох</button>
+                                                        <button class="message_send">Зурвас бичих</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>-->
+</div>
+<a href="#" class="online_friend_see_all">Жагсаалт нэмэх</a>
+</div>
+
+<!-- friend list end -->
+</div>

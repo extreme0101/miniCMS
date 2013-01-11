@@ -1,0 +1,38 @@
+<div class="post_write_container">
+    <textarea class="post_write_textarea" placeholder="Юу бодож байна?" onClick="this.style.color = '#222b33'" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Юу бодож байна?'"></textarea>
+    <div class="photo_video_containe">
+        <div class="post_photo_add_container">
+            <a href="#" class="photo_post"></a>
+            <div class="post_photo_popup">
+                <ul>
+                    <li><a href="#" class="open_computer">Компьтераас оруулах</a></li>
+                    <li><a href="#" class="open_galery">Галерей үүсгэх</a></li>
+                    <li><a href="#" class="open_camer">Камераас оруулах</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="post_video_add_container">
+            <a href="#" class="video_post"></a>
+            <div class="post_video_popup">
+                <ul>
+                    <li><a href="#" class="open_computer">Компьтераас оруулах</a></li>
+                    <li><a href="#" class="open_galery">Галерей үүсгэх</a></li>
+                    <li><a href="#" class="open_camer">Камераас оруулах</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <button class="add_post_button">Нэмэх</button>
+    <div class="post_write_footer">
+        <a href="#" class="locetion">Улаанбаатар</a>
+        <select id="e1" style="float:right;width:110px;">
+            <option value="bg">Бүгд</option>
+            <option value="AL">Alabama</option>
+            <option value="WY">Wyoming2</option>
+            <option value="WY">Wyoming3</option>
+            <option value="WY">Wyoming4</option>
+            <option value="WY">Wyoming5</option>
+            <option value="WY">Wyoming6</option>
+        </select>
+    </div>
+</div>

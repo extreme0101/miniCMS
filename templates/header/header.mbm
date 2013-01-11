@@ -1,0 +1,359 @@
+<!-- header start -->
+<div id="header">
+    <div class="header">
+    <!-- header logo start -->
+    <div class="header_logo">
+        <a href="#"><img src="/images/ol/header_logo.png"/></a>
+    </div>
+    <!-- header logo end -->
+    <!-- header tools start -->
+    <div class="header_tools_container">
+    <a href="#" class="user_small_img"><img src="/images/user/profile_small_img.png"/></a>
+    <a href="#" class="user_name">Тулга Даваахүү</a>
+    <!-- header tools start -->
+    <ul class="header_tools">
+    <!-- messages start -->
+    <li class="li">
+        <div id="scroller" class="messages_container">
+            <a href="#" class="message_icon"></a>
+            <div class="messages_list">
+                <span class="messages_header">
+                    <p class="messages_sub_title">Зурвас</p>
+                    <a href="#" class="new_message">Зурвас бичих</a>
+                </span>
+                <div id="scrollbar1">
+                    <div class="scrollbar"><div class="track"><div class="thumb"></div></div></div>
+                    <div class="viewport">
+                        <div class="overview">
+                            <ul class="message_tool">
+                                <li>
+                                    <a href="#" class="message_sender_img"><img src="/images/user/sender_img.png"/></a>
+                                    <a href="#" class="message_sender_name">Бат-Очирын Аригуун</a>
+                                    <p class="massage_sender_massage">Сайн уу. Юу байна хө.</p>
+                                    <time>5 минутын өмнө</time>
+                                </li>
+                                <li>
+                                    <a href="#" class="message_sender_img"><img src="/images/user/sender_img.png"/></a>
+                                    <a href="#" class="message_sender_name">Бат-Очирын Аригуун</a>
+                                    <p class="massage_sender_massage">Сайн уу. Юу байна хө.</p>
+                                    <time>5 минутын өмнө</time>
+                                </li>
+                                <li>
+                                    <a href="#" class="message_sender_img"><img src="/images/user/sender_img.png"/></a>
+                                    <a href="#" class="message_sender_name">Бат-Очирын Аригуун</a>
+                                    <p class="massage_sender_massage">Сайн уу. Юу байна хө.</p>
+                                    <time>5 минутын өмнө</time>
+                                </li>
+                                <li>
+                                    <a href="#" class="message_sender_img"><img src="/images/user/sender_img.png"/></a>
+                                    <a href="#" class="message_sender_name">Бат-Очирын Аригуун</a>
+                                    <p class="massage_sender_massage">Сайн уу. Юу байна хө.</p>
+                                    <time>5 минутын өмнө</time>
+                                </li>
+                                <li>
+                                    <a href="#" class="message_sender_img"><img src="/images/user/sender_img.png"/></a>
+                                    <a href="#" class="message_sender_name">Бат-Очирын Аригуун</a>
+                                    <p class="massage_sender_massage">Сайн уу. Юу байна хө.</p>
+                                    <time>5 минутын өмнө</time>
+                                </li>
+                                <li>
+                                    <a href="#" class="message_sender_img"><img src="/images/user/sender_img.png"/></a>
+                                    <a href="#" class="message_sender_name">Бат-Очирын Аригуун</a>
+                                    <p class="massage_sender_massage">Сайн уу. Юу байна хө.</p>
+                                    <time>5 минутын өмнө</time>
+                                </li>
+                                <li>
+                                    <a href="#" class="message_sender_img"><img src="/images/user/sender_img.png"/></a>
+                                    <a href="#" class="message_sender_name">Бат-Очирын Аригуун</a>
+                                    <p class="massage_sender_massage">Сайн уу. Юу байна хө.</p>
+                                    <time>5 минутын өмнө</time>
+                                </li>
+                                <li>
+                                    <a href="#" class="message_sender_img"><img src="/images/user/sender_img.png"/></a>
+                                    <a href="#" class="message_sender_name">Бат-Очирын Аригуун</a>
+                                    <p class="massage_sender_massage">Сайн уу. Юу байна хө.</p>
+                                    <time>5 минутын өмнө</time>
+                                </li>
+                                <li>
+                                    <a href="#" class="message_sender_img"><img src="/images/user/sender_img.png"/></a>
+                                    <a href="#" class="message_sender_name">Бат-Очирын Аригуун</a>
+                                    <p class="massage_sender_massage">Сайн уу. Юу байна хө.</p>
+                                    <time>5 минутын өмнө</time>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#" class="see_all">Бүгдийг харах</a>
+            </div>
+        </div>
+    </li>
+    <!-- messages end -->
+    <!-- friends start -->
+    <li class="li">
+        <div class="friend_container">
+            <a href="#" class="friend_icon"></a>
+            <div class="friend_list">
+                                        <span class="friend_header">
+                                            <p class="friend_sub_title">Найзын хүсэлт</p>
+                                            <a href="#" class="new_friend">Найз хайх</a>
+                                        </span>
+                <div id="scrollbar2">
+                    <div class="scrollbar"><div class="track"><div class="thumb"></div></div></div>
+                    <div class="viewport">
+                        <div class="overview">
+                            <ul class="friend_tool">
+                                <li>
+                                    <a href="#" class="friend_request_sender_img"><img src="/images/user/sender_img.png"/></a>
+                                    <a href="#" class="friend_request_sender_name">Бат-Очирын Аригуун</a>
+                                    <a href="#" class="same_friends">5 ижил найзтай</a>
+                                    <button class="friend_request_yes">Найз болох</button>
+                                    <button class="friend_request_no">Одоо биш</button>
+                                </li>
+                                <li>
+                                    <a href="#" class="friend_request_sender_img"><img src="/images/user/sender_img.png"/></a>
+                                    <a href="#" class="friend_request_sender_name">Бат-Очирын Аригуун</a>
+                                    <a href="#" class="same_friends">5 ижил найзтай</a>
+                                    <button class="friend_request_yes">Найз болох</button>
+                                    <button class="friend_request_no">Одоо биш</button>
+                                </li>
+                                <li>
+                                    <a href="#" class="friend_request_sender_img"><img src="/images/user/sender_img.png"/></a>
+                                    <a href="#" class="friend_request_sender_name">Бат-Очирын Аригуун</a>
+                                    <a href="#" class="same_friends">5 ижил найзтай</a>
+                                    <button class="friend_request_yes">Найз болох</button>
+                                    <button class="friend_request_no">Одоо биш</button>
+                                </li>
+                                <li>
+                                    <a href="#" class="friend_request_sender_img"><img src="/images/user/sender_img.png"/></a>
+                                    <a href="#" class="friend_request_sender_name">Бат-Очирын Аригуун</a>
+                                    <a href="#" class="same_friends">5 ижил найзтай</a>
+                                    <button class="friend_request_yes">Найз болох</button>
+                                    <button class="friend_request_no">Одоо биш</button>
+                                </li>
+                                <li>
+                                    <a href="#" class="friend_request_sender_img"><img src="/images/user/sender_img.png"/></a>
+                                    <a href="#" class="friend_request_sender_name">Бат-Очирын Аригуун</a>
+                                    <a href="#" class="same_friends">5 ижил найзтай</a>
+                                    <button class="friend_request_yes">Найз болох</button>
+                                    <button class="friend_request_no">Одоо биш</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="see_all">Бүгдийг харах</a>
+            </div>
+        </div>
+    </li>
+    <!-- friends end -->
+    <!-- mugrug start -->
+    <li class="li">
+        <div class="mugrug_container">
+            <a href="#" class="mugrug_icon"></a>
+            <div class="mugrug_list">
+                                        <span class="mugrug_header">
+                                            <a href="#" class="mugrug_cash_balance">Үлдэгдэл: 1500</a>
+                                        </span>
+                <div class="mugrug_cash_container">
+                    <div class="mugrug_reload">
+                        <p class="mugrug_reload_title">Мөгрөг цэнэглэх:</p>
+                        <ul class="mugrug_reload_ul">
+                            <li><a href="#">Гар утсаар</a></li>
+                            <li><a href="#">Банкаар</a></li>
+                            <li><a href="#">Виза, Мастер картаар</a></li>
+                        </ul>
+                    </div>
+                    <div class="mugrug_benefit_payment">
+                        <div class="mugrug_benefit_payment_tab">
+                            <ul class="clearfix" id="tabs">
+                                <li class="active"><a class="tab-a1" href="#tab1">Орлого</a></li>
+                                <li><a class="tab-a1" href="#tab2">Зарлага</a></li>
+                            </ul>
+                        </div>
+                        <div>
+                            <div  class="mugrug_benefit" id="tab1">
+                                <ul>
+                                    <li><a href="#">reclam 500</a></li>
+                                    <li><a href="#">reclam 500</a></li>
+                                    <li><a href="#">reclam 500</a></li>
+                                    <li><a href="#">reclam 500</a></li>
+                                    <li><a href="#">reclam 500</a></li>
+                                </ul>
+                            </div>
+
+                            <div class="mugrug_benefit" id="tab2" style="display:none;">
+                                <ul>
+                                    <li><a href="#">Бэлэг 500</a></li>
+                                    <li><a href="#">Кино үзэх 600</a></li>
+                                    <li><a href="#">Файл татах 1500</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mugrug_more">
+                        <p class="coment_mugrug">Мөгрөг данс гэдэг нь Олуулаа сайтад хэрэглэгдэх виртуал мөнгө юм</p>
+                        <a href="#" class="mugrug_more_button">Дэлгэрэнгүй</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <!-- mugrug end -->
+    <!-- notifications start -->
+    <li class="li">
+        <div class="notification_container">
+            <a href="#" class="notification_icon"></a>
+            <div class="notification_list">
+                                        <span class="notification_header">
+                                            <p class="notification_sub_title">Мэдэгдэл</p>
+                                        </span>
+                <div id="scrollbar3">
+                    <div class="scrollbar"><div class="track"><div class="thumb"></div></div></div>
+                    <div class="viewport">
+                        <div class="overview">
+                            <ul class="notification_tool">
+                                <li>
+                                    <img class="notification_human_img" src="/images/user/sender_img2.png"/>
+                                    <p class="notification_human_name">Бат-Очирын Аригуун</p>
+                                    <p class="notification_human_end">болон</p>
+                                    <p class="notification_human_name">Тулга Даваахүү</p>
+                                    <p class="notification_human_immixture">ВэбСторчууд</p>
+                                    <p class="notification_human_write">-д юм бичсэн:</p>
+                                    <p class="notification_human_comment">“Энэ групп хэзээ нээгдсэн юм бэ?”</p>
+                                    <time>35 минутын өмнө</time>
+                                </li>
+                                <li>
+                                    <img class="notification_human_img" src="/images/user/sender_img2.png"/>
+                                    <p class="notification_human_name">Бат-Очирын Аригуун</p>
+                                    <p class="notification_human_end">болон</p>
+                                    <p class="notification_human_name">Тулга Даваахүү</p>
+                                    <p class="notification_human_immixture">ВэбСторчууд</p>
+                                    <p class="notification_human_write">-д юм бичсэн:</p>
+                                    <p class="notification_human_comment">“Энэ групп хэзээ нээгдсэн юм бэ?”</p>
+                                    <time>35 минутын өмнө</time>
+                                </li>
+                                <li>
+                                    <img class="notification_human_img" src="/images/user/sender_img2.png"/>
+                                    <p class="notification_human_name">Бат-Очирын Аригуун</p>
+                                    <p class="notification_human_end">болон</p>
+                                    <p class="notification_human_name">Тулга Даваахүү</p>
+                                    <p class="notification_human_immixture">ВэбСторчууд</p>
+                                    <p class="notification_human_write">-д юм бичсэн:</p>
+                                    <p class="notification_human_comment">“Энэ групп хэзээ нээгдсэн юм бэ?”</p>
+                                    <time>35 минутын өмнө</time>
+                                </li>
+                                <li>
+                                    <img class="notification_human_img" src="/images/user/sender_img2.png"/>
+                                    <p class="notification_human_name">Бат-Очирын Аригуун</p>
+                                    <p class="notification_human_end">болон</p>
+                                    <p class="notification_human_name">Тулга Даваахүү</p>
+                                    <p class="notification_human_immixture">ВэбСторчууд</p>
+                                    <p class="notification_human_write">-д юм бичсэн:</p>
+                                    <p class="notification_human_comment">“Энэ групп хэзээ нээгдсэн юм бэ?”</p>
+                                    <time>35 минутын өмнө</time>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="see_all_notification">Дэлгэрэнгүй</a>
+            </div>
+        </div>
+    </li>
+    <!-- notification end -->
+    <!-- settings start -->
+    <li class="li">
+        <div class="settings_container">
+            <a href="#" class="settings_icon"></a>
+            <div class="settings_list">
+                <div class="settings_tools_container">
+                    <div class="settings_tools">
+                        <div class="left_settings_tool">
+                            <ul>
+                                <li>
+                                    <a href="#"><b>Профайл</b></a>
+                                    <span>|</span>
+                                    <a href="#">Засах</a>
+                                </li>
+                                <li>
+                                    <a href="#"><b>Найзууд</b></a>
+                                    <span>|</span>
+                                    <a href="#">Урих</a>
+                                </li>
+                                <li>
+                                    <a href="#"><b>Тохиргоо</b></a>
+                                </li>
+                            </ul>
+                            <a href="#" class="exit">Гарах</a>
+                        </div>
+                        <div class="right_settings_tool">
+                            <ul>
+                                <li>
+                                    <a href="#"><b>Мөгрөг</b></a>
+                                    <span>|</span>
+                                    <a href="#">Цэнэглэх</a>
+                                </li>
+                                <li>
+                                    <a href="#"><b>Зар</b></a>
+                                    <span>|</span>
+                                    <a href="#">Үүсгэх</a>
+                                </li>
+                                <li>
+                                    <a href="#"><b>Сурталчилгаа</b></a>
+                                    <span>|</span>
+                                    <a href="#">Үүсгэх</a>
+                                </li>
+                                <li>
+                                    <a href="#"><b>Тусламж</b></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    <!-- settings end -->
+    </ul>
+    <!-- header tools end -->
+    </div>
+    <!-- header tools end -->
+    <!-- search start -->
+
+
+    {% include 'header/search.mbm' with {'test': 'asd'} %}
+
+
+    <!--<div class="search_container">-->
+        <!--<form id="searchform">-->
+            <!--<div>-->
+                <!--<input type="text" size="30" value="" id="inputString" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Хайх'" onkeyup="lookup(this.value);"  autocomplete="off" placeholder="Хайх"/>-->
+                <!--<button type="submit" class="search_button"></button>-->
+            <!--</div>-->
+            <!--<div id="suggestions"></div>-->
+        <!--</form>-->
+    <!--</div>-->
+    <!-- search end -->
+    <!-- app start -->
+    <div class="app_container">
+        <ul>
+            <li>
+                <a href="#" class="apps"><img src="/images/icon/apps_icon.png"/></a>
+            </li>
+            <li>
+                <a href="#" class="apps"><img src="/images/icon/apps_icon.png"/></a>
+            </li>
+            <li>
+                <a href="#" class="apps"><img src="/images/icon/apps_icon.png"/></a>
+            </li>
+            <li>
+                <a href="#" class="apps"><img src="/images/icon/apps_icon.png"/></a>
+            </li>
+        </ul>
+    </div>
+    <!-- app end -->
+    </div>
+</div>
+<!-- header end -->

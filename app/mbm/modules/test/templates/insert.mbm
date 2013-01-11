@@ -1,0 +1,6 @@
+{{result}}
+<form action="" method="post">
+    <input type="text" name="name" size="30" />Name <br /> 
+    <input type="text" name="content" size="30" />content <br /> 
+    <input type="submit" name="addMe" value="save" />
+</form>

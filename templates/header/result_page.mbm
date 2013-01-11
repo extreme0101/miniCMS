@@ -1,0 +1,20 @@
+<span class="huudas">Хуудаснууд</span>
+<a href="#" class="all_huudas">Бүгд</a>
+<ul class="huudas_ul">
+    <li>
+        <img class="page_img" src="images/user/sender_img.png"/>
+        <a href="#" class="page_name">Олуулаа</a>
+        <p class="page_type">Энтертайнмент</p>
+        <a href="#" class="like_page">2526 хүн таалагдсан</a>
+        <a href="#" class="chat_icon"></a>
+        <a href="#" class="message_icon"></a>
+    </li>
+    <li>
+        <img class="page_img" src="images/user/sender_img.png"/>
+        <a href="#" class="page_name">Олуулаа</a>
+        <p class="page_type">Энтертайнмент</p>
+        <a href="#" class="like_page">2526 хүн таалагдсан</a>
+        <a href="#" class="chat_icon"></a>
+        <a href="#" class="message_icon"></a>
+    </li>
+</ul>

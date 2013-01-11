@@ -1,0 +1,22 @@
+<div class="commercial_container">
+    <div class="commercial_header">
+        <a href="#">Зар</a>
+    </div>
+    <div class="commercials">
+        <a href="#" class="commercial_title">USA сайтаас шууд хүргэнэ</a>
+        <a href="#"><img src="/images/user/111_62.png"/></a>
+        <p>Америкийн аль ч сайтаас авсан барааг 3-5 хоногт УБт хүргэнэ.</p>
+        <a href="#" class="like_it">Таалагдлаа</a>
+    </div>
+</div>
+<div class="commercial_container">
+    <div class="commercial_header">
+        <a href="#">Зар</a>
+    </div>
+    <div class="commercials">
+        <a href="#" class="commercial_title">USA сайтаас шууд хүргэнэ</a>
+        <a href="#"><img src="/images/user/111_62.png"/></a>
+        <p>Америкийн аль ч сайтаас авсан барааг 3-5 хоногт УБт хүргэнэ.</p>
+        <a href="#" class="like_it">Таалагдлаа</a>
+    </div>
+</div>

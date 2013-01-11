@@ -1,0 +1,115 @@
+<div class="event_container">
+    <div class="event_header">
+        <a href="#">Үйл явдал</a>
+    </div>
+    <ul class="event_list">
+        <li class="click_tooltip_container">
+            <div class="event_acordin_container">
+                <div class="events_container">
+                    <a href="#" class="event_acordin">Болох үйл явдлууд</a>
+                </div>
+                <ul class="event_acordin_ul">
+                    <li class="event_acordin_li">
+                        <div class="click_tooltip_button">
+                            <span class="also"><a href="#" class="key_man_name">Өнөөдөр</a></span>
+                            <div class="click_tooltip_content_container">
+                                <div class="event_tooltip_header">
+                                    <span>Үйл явдлууд</span>
+                                </div>
+                                <div class="events">
+                                    <a href="#" class="ooriin_zurag"><img src="/images/user/45_45.png"/></a>
+                                    <a href="#" class="event_name">white show</a>
+                                    <span class="start_time">Өнөөдөр 19:00 цагт</span>
+                                    <button class="join">Нэгдэх</button>
+                                    <button class="reject">Татгалзах</button>
+                                </div>
+                                <div class="events">
+                                    <a href="#" class="ooriin_zurag"><img src="/images/user/45_45.png"/></a>
+                                    <a href="#" class="event_name">white show</a>
+                                    <span class="start_time">Өнөөдөр 19:00 цагт</span>
+                                    <button class="join">Нэгдэх</button>
+                                    <button class="reject">Татгалзах</button>
+                                </div>
+                                <a href="#" class="see_all">Илүү</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="event_acordin_li">
+                        <div class="click_tooltip_button">
+                            <span class="also"><a href="#" class="key_man_name">Энэ 7 хоног</a></span>
+                            <div class="click_tooltip_content_container">
+                                <div class="event_tooltip_header">
+                                    <span>Үйл явдлууд</span>
+                                </div>
+                                <div class="events">
+                                    <a href="#" class="ooriin_zurag"><img src="/images/user/45_45.png"/></a>
+                                    <a href="#" class="event_name">white show</a>
+                                    <span class="start_time">Өнөөдөр 19:00 цагт</span>
+                                    <button class="join">Нэгдэх</button>
+                                    <button class="reject">Татгалзах</button>
+                                </div>
+                                <div class="events">
+                                    <a href="#" class="ooriin_zurag"><img src="/images/user/45_45.png"/></a>
+                                    <a href="#" class="event_name">white show</a>
+                                    <span class="start_time">Өнөөдөр 19:00 цагт</span>
+                                    <button class="join">Нэгдэх</button>
+                                    <button class="reject">Татгалзах</button>
+                                </div>
+                                <a href="#" class="see_all">Илүү</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="event_acordin_li">
+                        <div class="click_tooltip_button">
+                            <span class="also"><a href="#" class="key_man_name">Дараа 7 хоног</a></span>
+                            <div class="click_tooltip_content_container">
+                                <div class="event_tooltip_header">
+                                    <span>Үйл явдлууд</span>
+                                </div>
+                                <div class="events">
+                                    <a href="#" class="ooriin_zurag"><img src="/images/user/45_45.png"/></a>
+                                    <a href="#" class="event_name">white show</a>
+                                    <span class="start_time">Өнөөдөр 19:00 цагт</span>
+                                    <button class="join">Нэгдэх</button>
+                                    <button class="reject">Татгалзах</button>
+                                </div>
+                                <div class="events">
+                                    <a href="#" class="ooriin_zurag"><img src="/images/user/45_45.png"/></a>
+                                    <a href="#" class="event_name">white show</a>
+                                    <span class="start_time">Өнөөдөр 19:00 цагт</span>
+                                    <button class="join">Нэгдэх</button>
+                                    <button class="reject">Татгалзах</button>
+                                </div>
+                                <a href="#" class="see_all">Илүү</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="click_tooltip_container">
+            <div class="click_tooltip_button">
+                <span class="also"><a href="#" class="key_man_name"><b>Тулга Даваахүү</b></a> болон 2 хүний төрсөн өдөр</span>
+                <a href="#" class="event_number">25</a>
+                <div class="click_tooltip_content_container">
+                    <div class="event_tooltip_header">
+                        <span>Төрсөн өдрүүд</span>
+                    </div>
+                    <div class="events">
+                        <a href="#" class="ooriin_zurag"><img src="/images/user/45_45.png"/></a>
+                        <a href="#" class="event_name">Тулга Даваахүү<p class="age">(25)</p></a>
+                        <span class="send_gift"><a href="#">Бэлэг илгээх</a></span>
+                        <input class="event_input" type="text" placeholder="Баяр хүргэх..." onClick="this.style.color = '#222b33'" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Баяр хүргэх...'" />
+                    </div>
+                    <div class="events">
+                        <a href="#" class="ooriin_zurag"><img src="/images/user/45_45.png"/></a>
+                        <a href="#" class="event_name">Тулга Даваахүү<p class="age">(25)</p></a>
+                        <span class="send_gift"><a href="#">Бэлэг илгээх</a></span>
+                        <input class="event_input" type="text" placeholder="Баяр хүргэх..." onClick="this.style.color = '#222b33'" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Баяр хүргэх...'" />
+                    </div>
+                    <a href="#" class="see_all">Илүү</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>

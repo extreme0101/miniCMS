@@ -1,0 +1,117 @@
+<!-- login wrapper start -->
+<div id="login_wrapper">
+    <div class="login_wrapper">
+        <div class="login_logo">
+            <a href="#"><img src="/images/ol/login_logo.png"/></a>
+        </div>
+        <div class="introduction">
+            <b>ТАНЫ ЭРГЭН ТОЙРОНД</b>
+            <p>Find out what’s happening, right now, with the people and organizations you care about.</p>
+        </div>
+        <div class="sign_up_container">
+            <div class="sign_up">
+                <span class="sign_up_title">Бүртгүүлэх</span>
+                <div id="container">
+                    <form action="/test/user/register" method="post" id="register">
+                        <div>
+                            <span id='register_username_errorloc' class="error"></span>
+                            <span id='register_password_errorloc' class="error"></span>
+                            <span id='register_email_errorloc' class="error"></span>
+                            <span id='register_location_errorloc' class="error"></span>
+                            <span id='register_gender_errorloc' class="error"></span>
+                            <span id='register_year_errorloc' class="error"></span>
+                            <span id='register_month_errorloc' class="error"></span>
+                            <span id='register_day_errorloc' class="error"></span>
+                            
+                            <input type="hidden" name="submitted" value="1">
+                            <input type="text" class="sign_up_name" placeholder="Нэр" name="username">
+                            <input type="email" class="sign_up_email" placeholder="И-мэйл" name="email">
+                            <input type="password" class="sign_up_password"  placeholder="Нууц үг" name="password">
+                            <select data-placeholder="Байрлал..." class="chzn-select" name="location">
+                                <option value="">Байрлал</option>
+                                <option value="Mongolia">Mongolia</option>
+                            </select>
+                            <div>
+                                <select title="Хүйс:" name="gender">
+                                    <option value="">Хүйс</option>
+                                    <option value="1">Эр</option>
+                                    <option value="0">Эм</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select title="Он:" name="year">
+                                    <option value="">Он</option>
+                                    <option value="2012">2012</option>
+                                    <option value="2011">2011</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select title="Сар:" name="month">
+                                    <option value="">Сар</option>
+                                    <option value="1">1</option>
+                                </select>
+                            </div>
+                            <div>
+                                <select title="Өдөр:" name="day">
+                                    <option value="">Өдөр</option>
+                                    <option>1</option>
+                                    <option>2</option>
+                                    <option>3</option>
+                                </select>
+                            </div>
+                            <span class="uilchilge_noh">
+                                <input class="uilchilge_noh_input" type="checkbox">
+                                <p id="button2">Үйлчилгээний нөхцөл</p>
+                            </span>
+                            <input type="submit" value="" class="uilchilge_noh_button">
+                        </div>
+                    </form>
+                </div>
+
+<script type='text/javascript'>
+
+    var frmvalidator  = new Validator("register");
+    frmvalidator.EnableOnPageErrorDisplay();
+    frmvalidator.EnableMsgsTogether();
+
+    frmvalidator.addValidation("username","req","username");
+    frmvalidator.addValidation("email","req","Email");
+    frmvalidator.addValidation("password","req","password");
+    frmvalidator.addValidation("location","req","location");
+    frmvalidator.addValidation("gender","req","gender");
+    frmvalidator.addValidation("month","req","month");
+    frmvalidator.addValidation("day","req","day");
+
+//    frmvalidator.addValidation("password","req","Нууц үг");
+
+</script>
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div id="login_footer">
+    <div class="login_footer">
+        <ul>
+            <li><a href="#">Тухай</a></li>
+            <li>∙</li>
+            <li><a href="#">Тусламж</a></li>
+            <li>∙</li>
+            <li><a href="#">Блог</a></li>
+            <li>∙</li>
+            <li><a href="#">Гар утас</a></li>
+            <li>∙</li>
+            <li><a href="#">Ажлын байр</a></li>
+            <li>∙</li>
+            <li><a href="#">Сурталчилгаа</a></li>
+            <li>∙</li>
+            <li><a href="#">Хөгжүүлэлт</a></li>
+            <li>∙</li>
+            <li><a href="#">Үйлчилгээний нөхцөл</a></li>
+            <li>∙</li>
+            <li><a href="#">Нууцлал, аюулгүй байдал</a></li>
+        </ul>
+        <p>2012 © Олуулаа.мн</p>
+    </div>
+</div>

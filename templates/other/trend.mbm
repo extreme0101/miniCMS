@@ -1,0 +1,18 @@
+<div class="trend_container">
+    <a href="#" class="trend_refresh"><img src="/images/icon/19_19_1.png"/></a>
+    <ul class="trend_ul">
+        <li class="trend_li"><a href="#">Улс төр</a></li>
+        <li class="trend_li"><a href="#">Реклам</a></li>
+        <li class="trend_li"><a href="#">Шоу</a></li>
+        <li class="trend_li"><a href="#">Бидний амьдрал</a></li>
+        <li class="trend_li"><a href="#">15</a></li>
+    </ul>
+    <p class="trend_bound">Холбоотой трэнд:</p>
+    <ul class="trend_bound_ul">
+        <li class="trend_bound_li"><a href="#">Улс төр</a></li>
+        <li class="trend_bound_li"><span>∙</span></li>
+        <li class="trend_bound_li"><a href="#">Бидний амьдрал</a></li>
+        <li class="trend_bound_li"><span>∙</span></li>
+        <li class="trend_bound_li"><a href="#">Реклам</a></li>
+    </ul>
+</div>
