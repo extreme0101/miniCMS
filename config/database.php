@@ -3,11 +3,11 @@
 $mbm_config ['use_multiple_db'] = 0;
 
 /****************Webiin DB write holboltiin medeelel*********************/
-$mbm_config ['dbw_host'] = 'oluulaa.az.mn';
+$mbm_config ['dbw_host'] = '';
 //$mbm_config ['dbw_host'] = 'localhost';
-$mbm_config ['dbw_name'] = 'oluulaa_db';
-$mbm_config ['dbw_user'] = 'oluulaa_user';
-$mbm_config ['dbw_pass'] = 'OLPass12';
+$mbm_config ['dbw_name'] = '';
+$mbm_config ['dbw_user'] = '';
+$mbm_config ['dbw_pass'] = '';
 $mbm_config ['dbw_prefix'] = 't_';
 $mbm_config ['dbw_charset'] = 'utf8';
 /**
