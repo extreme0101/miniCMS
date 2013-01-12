@@ -16,7 +16,6 @@
  * @author     BATMUNKH Moltov <contact@batmunkh.com>
  * @version    SVN: $Id 
  */
-use Doctrine\Common\Annotations\AnnotationRegistry;
 
 class Core {
 
