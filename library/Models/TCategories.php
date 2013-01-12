@@ -541,4 +541,34 @@ class TCategories extends \Model
     {
         return $this->updatedAt;
     }
+    /**
+     * @var integer
+     *
+     * @ORM\Column(name="depth", type="integer", nullable=false)
+     */
+    private $depth;
+
+
+    /**
+     * Set depth
+     *
+     * @param integer $depth
+     * @return TCategories
+     */
+    public function setDepth($depth)
+    {
+        $this->depth = $depth;
+
+        return $this;
+    }
+
+    /**
+     * Get depth
+     *
+     * @return integer 
+     */
+    public function getDepth()
+    {
+        return $this->depth;
+    }
 }
