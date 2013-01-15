@@ -1,6 +1,6 @@
 div#mbm-login
 {
-	background:url(../../images/admin/dark-bg.png);
+	background:url(../../images/form/dark-bg.png);
 	width:288px;
 	height:218px;
 	margin:auto;
@@ -27,12 +27,12 @@ div#mbm-login h1
 	font-size:18px;
 	margin:0;
 	position:relative;
-	background:url(../../images/admin/login-stitch.png) repeat-x left bottom;
+	background:url(../../images/form/login-stitch.png) repeat-x left bottom;
 }
 
 div#mbm-login .mbm-login-lock
 {
-	background:url(../../images/admin/login-circle.png) no-repeat center center;
+	background:url(../../images/form/login-circle.png) no-repeat center center;
 	position:absolute;
 	padding:8px;
 	right:-10px;
@@ -41,7 +41,7 @@ div#mbm-login .mbm-login-lock
 
 div#mbm-login form
 {
-	background:url(../../images/admin/login-stitch.png) repeat-x left bottom;
+	background:url(../../images/form/login-stitch.png) repeat-x left bottom;
 }
 
 div#mbm-login .mbm-form-row

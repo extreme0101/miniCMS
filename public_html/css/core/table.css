@@ -8,7 +8,7 @@ table.mbm-table
 
 .mbm-table thead tr
 {
-	background:url(../../images/admin/table-header.png) repeat-x left bottom #f5f5f5;
+	background:url(../../images/form/table-header.png) repeat-x left bottom #f5f5f5;
 }
 
 .mbm-table thead tr th:first-child
@@ -73,17 +73,17 @@ div.dataTables_wrapper
 
 .dataTables_wrapper table thead th.sorting
 {
-	background-image:url(../../images/admin/sort.png);
+	background-image:url(../../images/form/sort.png);
 }
 
 .dataTables_wrapper table thead th.sorting_asc
 {
-	background-image:url(../../images/admin/sort_asc.png);
+	background-image:url(../../images/form/sort_asc.png);
 }
 
 .dataTables_wrapper table thead th.sorting_desc
 {
-	background-image:url(../../images/admin/sort_desc.png);
+	background-image:url(../../images/form/sort_desc.png);
 }
 
 div.dataTables_wrapper:before,
@@ -145,7 +145,7 @@ div.dataTables_wrapper .dataTables_paginate
 	margin:10px 8px 10px 0;
 	
 	background-repeat:repeat;
-	background-image:url(../../images/admin/inset.png);
+	background-image:url(../../images/form/inset.png);
 	
 	/* CSS 3 */
 	
@@ -173,7 +173,7 @@ div.dataTables_wrapper .dataTables_paginate div
 div.dataTables_wrapper .dataTables_paginate .paginate_disabled_previous, 
 div.dataTables_wrapper .dataTables_paginate .paginate_enabled_previous
 {
-	background-image:url(../../images/admin/arrow-left.png);
+	background-image:url(../../images/form/arrow-left.png);
 	background-repeat: no-repeat;
 	background-position: center center;
 	
@@ -200,7 +200,7 @@ div.dataTables_wrapper .dataTables_paginate .paginate_disabled_previous
 div.dataTables_wrapper .dataTables_paginate .paginate_disabled_next, 
 div.dataTables_wrapper .dataTables_paginate .paginate_enabled_next
 {
-	background-image:url(../../images/admin/arrow-right.png);
+	background-image:url(../../images/form/arrow-right.png);
 	background-repeat: no-repeat;
 	background-position: center center;
 	

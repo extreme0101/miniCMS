@@ -33,7 +33,7 @@ ul#mbm-gallery li .mbm-gallery-overlay
 	top:0; bottom:0;
 	left:0; right:0;
 	display:none;
-	background:url(../../images/admin/gallery-overlay.png);
+	background:url(../../images/form/gallery-overlay.png);
 }
 
 ul#mbm-gallery li .mbm-gallery-overlay .mbm-gallery-zoom

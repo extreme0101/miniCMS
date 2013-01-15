@@ -22,7 +22,7 @@
 	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
 	box-sizing: border-box;         /* Opera/IE 8+ */
 	
-	background:#ffffff url(../../images/admin/report-bg.png) repeat-x;
+	background:#ffffff url(../../images/form/report-bg.png) repeat-x;
 	border:1px solid #cccccc;
 	
 	/* CSS 3 */
@@ -85,12 +85,12 @@
 
 .mbm-report .mbm-report-content .mbm-report-value.up
 {
-	background:url(../../images/admin/report-up.png) no-repeat right center;
+	background:url(../../images/form/report-up.png) no-repeat right center;
 	padding-right:24px;
 }
 
 .mbm-report .mbm-report-content .mbm-report-value.down
 {
-	background:url(../../images/admin/report-down.png) no-repeat right center;
+	background:url(../../images/form/report-down.png) no-repeat right center;
 	padding-right:24px;
 }

@@ -7,7 +7,7 @@
 
 .mbm-panel .mbm-panel-header
 {
-	background:url(../../images/admin/panel-header-bg.png) repeat-x;
+	background:url(../../images/form/panel-header-bg.png) repeat-x;
 	height:25px;
 	position:relative;
 	padding:12px;
@@ -78,12 +78,12 @@
 
 .mbm-panel .mbm-panel-header .mbm-collapse-button span.mbm-collapsed
 {
-	background-image:url(../../images/admin/panel-button-icon-plus.png);
+	background-image:url(../../images/form/panel-button-icon-plus.png);
 }
 
 .mbm-panel .mbm-panel-header .mbm-collapse-button span
 {
-	background-image:url(../../images/admin/panel-button-icon-min.png);
+	background-image:url(../../images/form/panel-button-icon-min.png);
 }
 
 .mbm-panel .mbm-panel-body
