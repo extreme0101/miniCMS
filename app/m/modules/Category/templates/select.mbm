@@ -1,0 +1,18 @@
+<h2>All categories</h2>
+<form action="" method="POST">
+    <table>
+        <tr>
+            <th>Id</th>
+            <th>Parent Id</th>
+            <th>Name</th>
+        </tr>
+        {% for aCat in catList  %}
+          <tr> 
+                <td>{{aCat.id}}</td>
+                <td>{{aCat.parentId}}</td>
+                <td>{{aCat.name}}</td>
+                <td><a href="select/id/{{aCat.id}}">Edit</a></td>
+          </tr>
+        {% endfor %}
+    </table>
+</form>

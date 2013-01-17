@@ -1,0 +1,34 @@
+<h1>Login:</h1>
+<form acton="" method="post">
+    <table border="0">
+        <tr>
+            <td>
+                Username:
+            </td>
+            <td>
+                <input name="t_username" type="text" id="t_username" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Password:
+            </td>
+            <td>
+                <input name="t_password" type="password" id="t_password" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+            </td>
+            <td>
+                <input type="submit" name="submit" id="submit" value="Login">
+            </td>
+        </tr>
+    </table>
+</form>
+
+<a href='http://www.v3.az.mn/m/user/register'>Register</a>
+<br />
+<a href='http://www.v3.az.mn/m/user/forget_password'>Forget Password</a>
+<br />
+<span style="color:red;">{{result}}</span>

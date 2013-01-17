@@ -1,0 +1,60 @@
+<span style="color: red"> {{result}}</span>
+<h1>Register</h1>
+<form action="" method="post">
+<table border="0">
+    <tr>
+        <td>
+            Username:
+        </td>
+        <td>
+            <input type="text" name="u_text" id="u_text" />
+        </td>
+        <td>
+            
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Password:
+        </td>
+        <td>
+            <input type="password" name="u_password" id="u_password" />
+        </td>
+        <td>
+            
+        </td>
+    </tr>
+    <tr>
+        <td>
+          Confirm password:
+        </td>
+        <td>
+            <input type="password" name="u_confirm_password" id="u_confirm_password" />
+        </td>
+        <td>
+            
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Email:
+        </td>
+        <td>
+            <input type="text" name="u_email" id="u_email" />
+        </td>
+        <td>
+            
+        </td>
+    </tr>
+    <tr>
+        <td>
+         
+        </td>
+        <td>
+            <input type="submit" name="u_btn" id="u_btn" value="Register" />
+        </td>    
+    </tr>    
+
+</table>
+   
+</form>

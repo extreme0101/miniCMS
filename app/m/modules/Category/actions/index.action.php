@@ -12,7 +12,5 @@
  * file that was distributed with this source code.
  */
 
-$bb = array(
-    'a','d','c','ert'
-);
-render_template('index.mbm',array('aa'=>1,'mybb'=>$bb));
+
+render_template('index.mbm',array('test'=>1));

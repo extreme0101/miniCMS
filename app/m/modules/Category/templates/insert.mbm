@@ -1,0 +1,28 @@
+{{result}}
+<form action="" method="post">
+    
+    <table>
+        <tr> 
+            <td colspan="2" style="text-align:center"><h3>Category</h3></td>
+        </tr>
+        <tr>
+            <td> Parent name: </td>
+            <td> 
+                 <select name="owner">
+                    <option value="0">root</option>
+                    {% for aRow in allCat %}
+                    <option value="{{aRow.id}}">{{aRow.name}}</option>
+                    {% endfor %}
+                 </select>
+            </td>
+        </tr>
+        <tr>
+            <td> Name: </td>
+            <td> <input type="text" name="catName" /> </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align:right">
+                <input type="submit" name="addMe" value="Add category" />
+        </tr>
+     </table>
+</form>

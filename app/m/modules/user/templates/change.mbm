@@ -1,0 +1,31 @@
+<a href="http://www.v3.az.mn/m/user/home">Home</a>
+<h2>Change password</h2>
+<form action="" method="post">
+    <table>
+        <tr>
+            <td>
+                New Password:
+            </td>
+            <td>
+                <input type="password" name="new_pass" id="new_pass" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Confirm Password:
+            </td>
+            <td>
+                <input type="password" name="conf_pass" id="conf_pass" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+           
+            </td>
+            <td>
+                <input type="submit" name="change_pass" id="change_pass" value="Change password" />
+            </td>
+        </tr>
+    </table>
+</form>
+<span style="color: red;">{{result}}</span>

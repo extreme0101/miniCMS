@@ -27,7 +27,6 @@ use Doctrine\ORM\EntityRepository,
     Doctrine\ORM\NonUniqueResultException,
     Doctrine\Common\Annotations\AnnotationRegistry;
 
-
 class Model extends Doctrine\ORM\EntityManager{
 
     public static $DBW;

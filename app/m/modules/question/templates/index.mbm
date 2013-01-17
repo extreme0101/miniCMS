@@ -1,0 +1,59 @@
+<form action="" method="post">
+    <table border="0">
+        <tr>
+            <td>
+                Title:
+            </td>
+            <td><input type="text" name="title" id="title"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                added_by:
+            </td>
+            <td><label for="added_by"></label></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+               content:
+            </td>
+            <td><textarea name="content" id="content" rows="10" cols="80"> </textarea></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+              priority:
+            </td>
+            <td><input type="checkbox" name="priority" id="priority"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+              Created_at:
+            </td>
+            <td><input type="created" name="created" id="created"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+              thumb_up:
+            </td>
+            <td><input type="checkbox" name="up" id="up"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+              thumb_down:
+            </td>
+            <td><input type="checkbox" name="down" id="down"></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" name="sumbit" id="submit"/>
+            </td>
+        </tr>
+        
+    </table>
+</form>

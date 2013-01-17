@@ -1,0 +1,32 @@
+<form action="../../update" method="POST">
+    <input type="hidden" name="id" value="{{id}}"/>
+    <table>
+        <tr> 
+            <td colspan="2" style="text-align:center"><h3>Category Edit</h3></td>
+        </tr>
+        <tr>
+            <td> Parent name: </td>
+            <td> 
+                 <select name="owner">
+                    <option value="0">root</option>
+                    {% for aRow in allCat %}
+                        {% if aRow.id == parentId %}
+                            <option value="{{aRow.id}}" selected>{{aRow.name}}</option>
+                        {% else %}
+                            <option value="{{aRow.id}}"> {{aRow.name}}</option>
+                        {% endif %}
+                    {% endfor %}
+                 </select>
+            </td>
+        </tr>
+        <tr>
+            <td> Name: </td>
+            <td> <input type="text" name="catName" value="{{currentCatName}}"/></td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align:right">
+                <input type="submit" name="addMe" value="Edit category" />
+            </td>
+        </tr>
+     </table>
+</form>

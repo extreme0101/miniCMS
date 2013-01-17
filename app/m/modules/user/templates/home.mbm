@@ -1,0 +1,25 @@
+
+<a href="http://www.v3.az.mn/m/user/home/view/2">Profile</a>
+<a href="http://www.v3.az.mn/m/user/login/logout/{{logout_key}}">Logout</a>
+
+{% for view in profile_view  %}
+<h2>User INFO:</h2>
+             <table border='0'
+   <tr> 
+                    <td>ID:</td>
+                    <td>{{view.id}}</td>
+                    </tr>
+                    <tr> 
+                    <td>Username:</td>
+                    <td>{{view.username}}</td>
+                    </tr>
+                    <tr> 
+                    <td>Email address:</td>
+                    <td>{{view.Email}}</td>
+                    </tr>
+                    <tr> 
+                        <td><a href='http://www.v3.az.mn/m/user/change'>Change password</a></td>
+                        <td><a href='http://www.v3.az.mn/m/user/profile/edit/asdlKLKKLLjafdsdJHYsdaHYj'>Update</a></td>
+                   </tr>
+        </table>            
+        {% endfor %}

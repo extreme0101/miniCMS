@@ -1,0 +1,20 @@
+{% for view in profile_view  %}
+<a href="http://www.v3.az.mn/m/user/home">Home</a>
+<h2>Profile Edit:</h2>
+<form action="" method="POST">
+             <table border='0'>
+                    <tr> 
+                    <td>Username:</td>
+                    <td><input type="text" name="u_username" id="u_username" value={{view.username}} /></td>
+                    </tr>
+                    <tr> 
+                    <td>Email address:</td>
+                    <td><input type="text" name="u_email" id="u_email" value={{view.Email}} /></td>
+                    </tr>
+                    <tr> 
+                        <td><input type="submit" name="profile_edit" id="profile_edit" value="Submit"</td>
+                   </tr>
+        </table>    
+    </form>
+       {% endfor %}
+<span style="color: red;">{{result}}</span> 
