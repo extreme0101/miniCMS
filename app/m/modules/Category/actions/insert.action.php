@@ -8,6 +8,8 @@
  * file that was distributed with this source code.
  */
 
+load_js('lib/adsfasd.js');
+
 $catList = new Model_TCategories();
 $allCat = $catList->getAllCategories();
 
@@ -20,27 +22,41 @@ if(isset($post_vars['catName']))
     $aCategory->setAddedBy(get_logged_user_id());
     $aCategory->setName($post_vars['catName']);
     
-    if($post_vars['owner'] == 0)
-        $aCategory->setDepth(1);
-    else
+    $rgt = 2;
+    $depth = 0;
+    
+    $par = $DBW->find('TCategories', $post_vars['owner']);
+    $depth = $par->getDepth() + 1;
+    $rgt = $par->getRgt();
+    $lft = $par->getLft();
+    
+    
+    foreach($allCat as $catOne)
     {
-        $depth = "";
-        $aCat = $catList->getCategory($post_vars['owner']);
-        foreach($aCat as $par)
+        $r1 = $catOne->getRgt();
+        $l1 = $catOne->getlft();
+        
+        if($r1 >= $rgt)
         {
-            $depth = $par->getDepth() + 1;
-            
+            $r1 += 2;
         }
-        $aCategory->setDepth($depth);
+        
+        if($l1 >= $rgt)
+        {
+            $l1 += 2;
+        }
+            
+        $catList->updateTree($catOne->getId(), $l1, $r1);
     }
     
-    $aCategory->setLft(1);
-    $aCategory->setRgt(1);
+    $aCategory->setDepth($depth);
+    $aCategory->setLft($rgt);
+    $aCategory->setRgt($rgt + 1);
     
-    $aCategory->setLang("eng");
+    $aCategory->setLang("mn");
     $aCategory->setPos(1);
     $aCategory->setHits(0);
-    $aCategory->setSt("st");
+    $aCategory->setSt(0);
     $aCategory->setContentType("text");
     $aCategory->setAttrHref('');
     $aCategory->setAttrOnclick('');
@@ -53,5 +69,3 @@ if(isset($post_vars['catName']))
     $result = '#'.$aCategory->getId().' inserted';
 }
 render_template('insert.mbm',array('result'=>$result, 'allCat'=>$allCat));
-
-

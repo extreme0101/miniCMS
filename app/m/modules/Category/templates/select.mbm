@@ -7,12 +7,25 @@
             <th>Name</th>
         </tr>
         {% for aCat in catList  %}
+        {% if aCat.id != 0 %}
           <tr> 
                 <td>{{aCat.id}}</td>
                 <td>{{aCat.parentId}}</td>
-                <td>{{aCat.name}}</td>
+                <td id="name" title="{{aCat.id}}">{{aCat.name}}</td>
                 <td><a href="select/id/{{aCat.id}}">Edit</a></td>
           </tr>
+        {% endif %}
         {% endfor %}
     </table>
 </form>
+
+<script type="text/javascript">
+    alert("gadna ni baina oo!!!");
+    $("#name").click(function(){
+        alert("click event success!");
+    });
+
+    $(document).ready(function(){
+        alert("Called a jquery. Done it. SUCCESS!!!");
+    });
+</script>

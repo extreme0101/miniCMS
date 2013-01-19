@@ -9,7 +9,6 @@
             <td> Parent name: </td>
             <td> 
                  <select name="owner">
-                    <option value="0">root</option>
                     {% for aRow in allCat %}
                     <option value="{{aRow.id}}">{{aRow.name}}</option>
                     {% endfor %}

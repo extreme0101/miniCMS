@@ -8,7 +8,6 @@
             <td> Parent name: </td>
             <td> 
                  <select name="owner">
-                    <option value="0">root</option>
                     {% for aRow in allCat %}
                         {% if aRow.id == parentId %}
                             <option value="{{aRow.id}}" selected>{{aRow.name}}</option>
