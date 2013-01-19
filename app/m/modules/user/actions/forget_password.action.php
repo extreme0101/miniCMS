@@ -24,7 +24,7 @@ $post_forget_vars = Config::get('POST');
 
 if(isset($post_forget_vars['forget']))
 {
-    echo $post_forget_vars['forget'];
+   // echo $post_forget_vars['forget'];
     
       $DBR = Config::get('DBR');
         $qb = $DBR->createQueryBuilder();
@@ -35,6 +35,9 @@ if(isset($post_forget_vars['forget']))
         $query = $qb->getQuery();
         $result = $query->getResult();
  
+        $result_txt='';
+        $b=0;
+        
         $generate_pass = new User();
         $send_mail = new Email_Send();
       $new_pass = rand(1000,9000);  
@@ -52,16 +55,16 @@ if(isset($post_forget_vars['forget']))
                               ->setPasswordTmp($generate_pass->generatePassword($new_pass , "NbHAasdaAdksd1oasd0", 'md5'));
                             $DBR->persist($q);
                             $DBR->flush();
-
+                            $b=1;
 
                         $result_txt = 'Sending your email ';
                         
                      }
                   //echo $value->getId();
              }
-             else
+             elseif($b!=1)
              {
-                 //echo "Not User";
+                 $result_txt = "Not User";
              }
         }
     

@@ -20,9 +20,56 @@
  * @author     Batbayar Gantulga <b.gantulga0101g@gmail.com>
  * @version    SVN: $Id 
  */
+$post_vars = Config::get('POST');
+$result_txt='';
+if($post_vars['t_username'])
+{
+     $user = Model_TUsers::getUserByUsername($post_vars['t_username']);
+     $login_routing = new Routing();
+//    $result = '#'.$test->getId().' inserted';
+
+    if (count($user) == 1) {
+
+        $password = User::generatePassword($post_vars['t_password'],$user[0]['salt']);
+        
+        if($password == $user[0]['password']){
+                if($user[0]['st'] == 'active')
+                {    
+                   $u = new \User($user[0]);
+
+                   if($u->login($user[0]['username'], $password, $user[0]['salt'])){
+                       $result_txt = 'logged in';
+                       redirect_to($login_routing->convertTo('home'));
+
+                   }else{
+                       $result_txt = 'Invalid login info';
+                   }
+               }else
+               {
+                   $result_txt = 'not active';
+               }
+        }else{
+            $result_txt ='error pass';
+        }
+    } else {
+        $result_txt = 'No such user found';
+    }
+    
+}
+
+
+
+
+
+
+
+
+/*
+
+
 $post_login_vars = Config::get('POST');
 $result_txt = '';
-if(isset($post_login_vars['t_username']))
+if(isset($post_login_vars['t_username1']))
 {
     $login_routing = new Routing();
     
@@ -77,7 +124,7 @@ if(isset($post_login_vars['t_username']))
         }
     }
 }
-
+*/
 if(isset($GET['logout'])&& $GET['logout']== $_SESSION['password'])
 {
 			$log_out =new User();
@@ -87,7 +134,6 @@ if(isset($GET['logout'])&& $GET['logout']== $_SESSION['password'])
                         }
                         
 }
-    print_r($_SESSION);
 
     render_template('login.mbm',array('result'=>$result_txt));
 

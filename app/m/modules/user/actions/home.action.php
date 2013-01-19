@@ -22,14 +22,14 @@
  */
 $_SESSION['uid'] = $_SESSION['user']['id'];
 $logout_key = $_SESSION['password'];
-    
+
 if(isset($_SESSION['user']['id']) && ($_SESSION['user']['id']!=0))
 {
-    
-  //  print_r($_SESSION);
+    //echo date("Y-m-d H:i:s");
+    //  print_r($_SESSION);
                        $tUser = new TUserLoginHistory();
                        $tUser->setUserId($_SESSION['user']['id']);
-                       //$tUser->setLoginDatetime(DateTime('Y-m-d H:i:s'));
+                       $tUser->setLoginDatetime(new DateTime('now'));
                        $tUser->setLoginIp($_SERVER['REMOTE_ADDR']);
 
                        $DBW->persist($tUser);
