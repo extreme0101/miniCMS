@@ -9,13 +9,12 @@
 
 
 
-load_layout('ol');
+load_layout('default');
 /**
  * ug module togtmol ashiglagdah JS files
  */
-load_js('jquery/jquery-1.7.2.min.js');
-load_js('jquery/jquery-ui-1.8.20.custom.min.js');
-load_js('jquery/ui/js/jquery.ui.accordion.js');
+load_js('jquery/jquery-1.8.3.js');
+load_js('jquery/jquery-ui-1.9.2.custom.min.js');
 
 /**
  * ug module togtmol ashiglagdah CSS files
