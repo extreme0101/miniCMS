@@ -1,7 +1,7 @@
-SVN Repo: https://ns8.mng.cc:10021/repos/oluulaa
-ftp: oluulaa.az.mn
-user: oluulaa
-pass: flower123
+
+ftp: **
+user: **
+pass: **
 
 Installation:
 

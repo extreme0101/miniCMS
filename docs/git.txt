@@ -3,4 +3,4 @@ git init
 git add *
 git commit -m "My initial commit message"
 git remote add origin https://github.com/batmunkhcom/miniCMS.git
-git push -u origin master
+git push -u origin v3
