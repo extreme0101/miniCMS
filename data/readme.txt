@@ -31,9 +31,10 @@ New:
     - User friendly admin panel
     - Multiple layouts
     - Protected upload folder
+    - Multi Language
+    - New language word tracking
     - Error logging
     - Error tracking
-    - New language word tracking
     - Version Controlling
     - Module configuration
     - User permissions
