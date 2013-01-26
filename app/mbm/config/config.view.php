@@ -9,7 +9,7 @@
 
 
 
-load_layout('ol');
+load_layout('default');
 /**
  * ug module togtmol ashiglagdah JS files
  */
