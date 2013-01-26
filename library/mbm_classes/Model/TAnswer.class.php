@@ -21,7 +21,7 @@
  * @version    SVN: $Id 
  */
 
-class TAnswers extends TDemAnswers
+class Model_TAnswers extends TDemAnswers
 {
         
 }
