@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-load_js('lib/adsfasd.js');
+load_js('lib/adsfasd.js'); //!ene hereggui bol arilgah
 
 $catList = new Model_TCategories();
 $allCat = $catList->getAllCategories();

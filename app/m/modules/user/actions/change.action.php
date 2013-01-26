@@ -29,7 +29,7 @@ if(isset($post_register_vars['new_pass']))
     $generate_pass = new User();
     if($post_register_vars['new_pass'] == '' && $post_register_vars['conf_pass'] == '')
     {
-        $result_txt = "Password-uudaa oruulna uu";
+        $result_txt = "Password-uudaa oruulna uu"; //!helnii function ashiglaj yavna. __('Text here')
     }
     else
     {   

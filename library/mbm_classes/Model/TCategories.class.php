@@ -62,7 +62,7 @@ class Model_TCategories extends TCategories
     }
     
     /**
-     * Category-g zasvarlana.
+     * Category-g zasvarlana. 
      * 
      * @param integer $id
      * zasvarlah category-giin id
@@ -71,11 +71,11 @@ class Model_TCategories extends TCategories
      * @return not.
      * not return any value;
      */
-    public function update($id, $parentId, $name)
+    public function update($id, $parentId, $name) //!nershliig butneer oruulah. Ex: updateCategory geh met.....
     {
         $DBW = Config::get('DBW');
         $q = $DBW::create()
-                ->update('t_category')
+                ->update('t_category') //!TCategory gej ashiglana
                 ->set('name ?', $name)
                 ->set('parentId ?', $parentId)
                 ->where('id = ?', $id)
