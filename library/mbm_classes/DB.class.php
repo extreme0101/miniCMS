@@ -12,31 +12,35 @@
  * Description Database 
  *
  * @package    miniCMS
- * @subpackage -
+ * @subpackage DB
  * @author     BATMUNKH Moltov <contact@batmunkh.com>
  * @version    SVN: $Id 
  */
-class DB {
+class DB extends \Doctrine\Common\ClassLoader{
 
     /**
      * 0 - Not loaded
      * 1 - Loaded
+     * 2 - Loaded in Write mode.
+     * 3 - Loaded in READ mode.
+     * 4 - Loaded in Write mode. CORE DB
+     * 5 - Loaded in READ mode. CORE DB
      */
-    private static $status;
+    public static $status;
     
     /**
      * DB::getInstance()
      */
-    private static $instance;
+    private static $instance = null;
     
     /**
      */
-    private static $DBCW; //DB Core Write connection
-    private static $DBCR; //DB Core Read connection
-    private static $DBW; //DB Write connection
-    private static $DBR; //DB Read connection
+    public $DBCW; //DB Core Write connection
+    public $DBCR; //DB Core Read connection
+    public $DBW; //DB Write connection
+    public $DBR; //DB Read connection
 
-    private function __construct() {
+    public function __construct() {
         // initalize state value
         $this->initDatabase();
     }
@@ -154,16 +158,24 @@ class DB {
         $this->DBR = $em;
         $this->DBCW = $em;
         $this->DBCR = $em;
-
+        
+        self::$instance = $em;
+        
         //busad include hiigdej bui file uud ruu damjuulahad ashiglav.
         Config::set('DBW', $this->DBW);
         Config::set('DBR', $this->DBR);
         Config::set('DBCW', $this->DBCW);
         Config::set('DBCR', $this->DBCR);
         
-        
-        self::$status = '1';
+        self::$status = 1;
     }
 
+    /**
+     * 
+     */
+    public static function getDBW(){
+        
+        return $this->DBCW;
+    }
 }
 
