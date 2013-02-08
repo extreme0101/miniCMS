@@ -219,6 +219,7 @@ class Core {
             'password' => DBW_PASS,
             'host' => DBW_HOST,
             'driver' => DBW_DRIVER,
+            'charset' => DBW_CHARSET
         );
 
         Config::set('DB_OPTIONS', $connectionOptions);
