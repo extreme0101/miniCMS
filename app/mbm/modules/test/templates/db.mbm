@@ -1,0 +1,2 @@
+<h2>db instance example</h2>
+{{dump(result)}}
