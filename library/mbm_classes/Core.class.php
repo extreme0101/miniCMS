@@ -16,7 +16,6 @@
  * @author     BATMUNKH Moltov <contact@batmunkh.com>
  * @version    SVN: $Id 
  */
-
 class Core {
 
     public $include_dir;
@@ -219,6 +218,10 @@ class Core {
             'password' => DBW_PASS,
             'host' => DBW_HOST,
             'driver' => DBW_DRIVER,
+            'driverOptions' => array(
+                'charset' => 'UTF8',
+                'collation'=>'utf8_general_ci'
+            )
         );
 
         Config::set('DB_OPTIONS', $connectionOptions);
@@ -241,6 +244,10 @@ class Core {
                 $em->getConnection()->getSchemaManager()
         );
         $em->getConfiguration()->setMetadataDriverImpl($driver);
+
+        $em->getEventManager()->addEventSubscriber(
+                new \Doctrine\DBAL\Event\Listeners\MysqlSessionInit('utf8', 'utf8_unicode_ci')
+        );
 
         $this->DBW = $em;
         $this->DBR = $em;
