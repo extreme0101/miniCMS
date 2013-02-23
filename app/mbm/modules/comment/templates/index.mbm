@@ -1,0 +1,57 @@
+{% set user = app.session.get('user') %}
+{% if session.user.username %}
+{% set username = session.user.username %}
+{% else %}
+{% set username = 'Guest' %}
+{% endif %}
+<hr />
+<h2>{{APP}}...</h2>
+<h2>{{MODULE}}...</h2>
+<h2>{{ACTION}}...</h2>
+<h2>{{CONFIG.action}}...</h2>
+<form id="commentForm" name="commentForm" action="" method="POST" onsubmit="submitCommentForm(this); return false;">
+    <input type="hidden" name="code" value="{{COMMNET_CODE}}" />
+<div id="commentResult" style="display: none;"></div>
+<div style="display: none;">
+    <span>Username</span>
+    <input type="text" name="username" value="{{username}}" />
+</div>
+<div>
+    <span>comment</span>
+    <textarea name="comment" class="" cols="20" rows="5">
+    </textarea>
+</div>
+<div>
+    <span>&nbsp;</span>
+    <input type="submit" name="sendComment" value="send comment" />
+</div>
+</form>
+<hr />
+{{dump(session.user)}}
+<hr />
+{{dump(session)}}
+<script>
+jQuery(function(){
+
+});
+
+function submitCommentForm(formEl){
+    if(formEl.username.length<2){
+        alert('Please enter your name');
+    }else if(formEl.comment.length<2){
+        alert('Please enter your name');
+    }else{
+        $.ajax({
+                type: "POST", 
+                url: '/{{APP}}/{{MODULE}}/ajax', 
+                data: "username="+formEl.username.value+"&comment="+formEl.comment.value+'&code='+formEl.code.value+'&action=send_comment',
+                complete: function(data){
+                        alert(data.responseText);
+                }
+        });
+    }
+
+    return false;
+}
+
+</script>
