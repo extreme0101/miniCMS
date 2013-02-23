@@ -86,9 +86,8 @@ class Config extends Core{
      * @return none;
      */
     public static function sess_set($name, $value) {
-        $Core = $GLOBALS['Core'];
         
-        $Core->session->setAttribute($name,$value);
+        $_SESSION[$name] = $value;
     }
 
     /**
@@ -98,9 +97,8 @@ class Config extends Core{
      * @return string;
      */
     public static function sess_get($key) {
-        $Core = $GLOBALS['Core'];
         
-        $Core->session->getAttribute($key);
+        return $_SESSION[$key];
     }
 
     /**

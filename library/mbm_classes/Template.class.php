@@ -55,9 +55,12 @@ class Template {
         }
         
         if(!is_array($array)){
-            $array = array('miniCMS'=>'miniCMS');
+            $array = array('miniCMS'=>'miniCMS v3');
         }
-        
+        $array['APP'] = Config::get('app');
+        $array['MODULE'] = Config::get('module');
+        $array['ACTION'] = Config::get('action');
+        $array['CONFIG'] = Config::$data;
         Log::save('Loaded template file: '.$template_file);
         Log::save("config : ".Config::get('app')."/".Config::get('module')."/".Config::get('action'));
         return self::set($template_data, $config->twig->render($template_file, $array));
@@ -99,8 +102,9 @@ class Template {
 
             return self::$data[$name];
         } else {
-
-            return null.'tpl';
+            
+            Log::save('no template loaded', 0);
+            return null.'';
         }
     }
 

@@ -94,6 +94,7 @@ function render_template($template_file, $array = array(), $template_data = 'bod
     }else{
         $array_data = $GET;
     }
+    
     Template::renderTemplate($template_file, $array_data, $template_data);
 }
 

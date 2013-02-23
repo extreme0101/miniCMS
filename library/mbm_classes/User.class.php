@@ -19,7 +19,7 @@
 class User extends Core {
 
     public $lang = 'mn';
-    public $user_id;
+    public $user_id = 0;
     public $is_logged_in = 0;
     public $default_credentials = array();
     public $user_info = array();
@@ -27,7 +27,6 @@ class User extends Core {
     public function User($user_info = array()) {
 
         session_start();
-        
 
         $this->setLang();
         if ((int) $user_info['id'] > 0) {
@@ -207,7 +206,7 @@ class User extends Core {
      * @return boolean
      */
     public function generateLoggedSession($user) {
-
+//        print_r($user); die();
         $_SESSION['user_id'] = $user['id'];
 //        if (strlen($token) == 64 || strlen($token) == 32) {
         $this->setAttribute('user_id', $user['id']);
@@ -242,7 +241,7 @@ class User extends Core {
 //        print_r($user); die();
 
         $u = Model_TUsers::getUserByUsername($user['username']);
-
+//        print_r($u); die();
         if (count($u) == 1) {
             $user['token'] = $u[0]['token'];
             $user['password'] = $u[0]['password'];
@@ -259,8 +258,10 @@ class User extends Core {
             $this->user_id = $u[0]['id'];
             $this->setAttribute('user_id', $u[0]['id']);
             
+            Config::set('user_id', $this->user_id);
             $this->setConfig();
             
+//            print_r($_SESSION); die();
             return true;
         } else {
             $this->logout();

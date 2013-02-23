@@ -36,6 +36,7 @@ class DB extends \Doctrine\Common\ClassLoader{
     /**
      */
     public $DBCW; //DB Core Write connection
+  
     public $DBCR; //DB Core Read connection
     public $DBW; //DB Write connection
     public $DBR; //DB Read connection
