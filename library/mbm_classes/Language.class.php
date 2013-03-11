@@ -36,7 +36,7 @@ class Language {
         foreach ($this->langFiles as $k=>$v){
             require_once $v;
         }
-        $this->words = $lang;
+        self::$words = $lang;
     }
 
     public function __($txt = '') {

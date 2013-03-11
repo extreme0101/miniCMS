@@ -35,6 +35,11 @@ class Routing {
     public static function convertTo($route = 'homepage') {
 
         global $routing;
+        
+        if(substr($route, -4,1) == '.'){
+            LOG::save('No route' ,1);
+            return null;
+        }
 
         $route = str_replace('.php', '', $route);
         $route = str_replace('?/', '?', $route);

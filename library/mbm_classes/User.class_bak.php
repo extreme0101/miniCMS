@@ -27,19 +27,19 @@ class User extends Core {
     public function User($user_info = array()) {
 
         session_start();
-        
+
         $this->session = new Storage_Session(array(
-            'session_id'=>session_id()
-        ));
+            'session_id' => session_id()
+                ));
 
         $this->setLang();
         if ((int) $user_info['id'] > 0) {
             $this->user_id = $user_info['id'];
             $this->setPrivateAttribute($user_info);
-        }else{
+        } else {
             $this->user_id = 0;
         }
-        
+
         $this->setAttribute('user_id', $this->user_id);
         $this->default_credentials = array(
             'admin' => 'admin',
@@ -51,6 +51,7 @@ class User extends Core {
         $this->setConfig();
         $user_credentials = new User_Credentials(__CLASS__);
         //$this->setAttribute('CrY', $user_credentials->setCrY());
+        $this->user_id = $u[0]['id'];
     }
 
     public function setLang() {
@@ -245,7 +246,7 @@ class User extends Core {
         if (count($u) == 1) {
             $user['token'] = $u[0]['token'];
             $user['password'] = $u[0]['password'];
-            
+
             $this->generateLoggedSession($user);
             $this->setPrivateAttribute(array(
                 'name' => $user['username'],
@@ -254,11 +255,11 @@ class User extends Core {
             ));
             $this->setUserId($this->getPrivateAttribute('id'));
             $this->setAttribute('user_id', $u[0]['id']);
-            
+
             $this->user_id = $u[0]['id'];
-            
+
             $this->setConfig();
-            
+
             return true;
         } else {
             $this->logout();
@@ -284,7 +285,7 @@ class User extends Core {
                 'name' => 'Guest',
                 'id' => 0
             ));
-            
+
             $this->user_id = 0;
 
             return true;
@@ -311,13 +312,14 @@ class User extends Core {
             return false;
         }
     }
+
     /**
      * Config::set() -iig ashinechilne
      * 
      * @return nonne
      */
     public function setConfig() {
-       
+
         Config::set('user', $this);
     }
 

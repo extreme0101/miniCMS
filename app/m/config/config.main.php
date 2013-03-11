@@ -8,4 +8,3 @@
  * file that was distributed with this source code.
  */
 $user_credentials[] = array();
-$template_layout[] = 'ol';

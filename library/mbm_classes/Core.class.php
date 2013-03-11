@@ -41,6 +41,10 @@ class Core {
 
     public function __construct($config) {
 
+        if (substr($_SERVER['REQUEST_URI'], -4, 1) == '.' || substr($_SERVER['REQUEST_URI'], -3, 1) =='.') {
+
+            return false;
+        }
         require_once 'Loader.class.php';
 
         Loader::registerAutoload();
@@ -68,8 +72,6 @@ class Core {
         Config::set('GET', $this->GET);
 
         $GLOBALS['GET'] = $this->GET;
-
-        include_files(LIB_DIR . 'mbm_functions' . DS);
 
 //connect to DB
         $this->initDatabase();
@@ -114,6 +116,7 @@ class Core {
          *
          */
         //GET[''] utguud orj irsen. initConfig oor this->config ok bolson tul ....
+
         $this->config->loadApp($this->GET['app']);
         $this->config->loadModule($this->GET['module']);
 
@@ -206,11 +209,14 @@ class Core {
         //tur disable hiiv
 //        $config->setMetadataCacheImpl($cache);
 //        $config->setQueryCacheImpl($cache);
+//        $driverImpl = $config->newDefaultAnnotationDriver(array(LIB_DIR . 'Models'));
+//        $config->setMetadataDriverImpl($driverImpl);
 //mapping (example uses annotations, could be any of XML/YAML or plain PHP)
         Doctrine\Common\Annotations\AnnotationRegistry::registerFile(LIB_DIR . 'mbm_classes/Doctrine/ORM/Mapping/Driver/DoctrineAnnotations.php');
 //        $driver = new Doctrine\ORM\Mapping\Driver\AnnotationDriver(
 //                new Doctrine\Common\Annotations\AnnotationReader(), array($model_dir)
 //        );
+
 
         $connectionOptions = array(
             'dbname' => DBW_NAME,
@@ -218,10 +224,7 @@ class Core {
             'password' => DBW_PASS,
             'host' => DBW_HOST,
             'driver' => DBW_DRIVER,
-            'driverOptions' => array(
-                'charset' => 'UTF8',
-                'collation'=>'utf8_general_ci'
-            )
+            'charset' => DBW_CHARSET
         );
 
         Config::set('DB_OPTIONS', $connectionOptions);
@@ -239,15 +242,14 @@ class Core {
                 ));
 
 
+
 // fetch metadata
         $driver = new \Doctrine\ORM\Mapping\Driver\DatabaseDriver(
                 $em->getConnection()->getSchemaManager()
         );
         $em->getConfiguration()->setMetadataDriverImpl($driver);
 
-        $em->getEventManager()->addEventSubscriber(
-                new \Doctrine\DBAL\Event\Listeners\MysqlSessionInit('utf8', 'utf8_unicode_ci')
-        );
+
 
         $this->DBW = $em;
         $this->DBR = $em;

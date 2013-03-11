@@ -73,7 +73,8 @@ class Request_Get extends Request {
             //davhar slash iig tseverleh
             $data = str_replace("//", "/", $data);
 
-            $variables = array(0 => $app_name, '', '');
+            $variables = array(0 => DEFAULT_APP, 1=>DEFAULT_MODULE, 2=>DEFAULT_ACTION);
+            
             //Route-d bichigdsen bol hargalzah app ruu shidnee
             $converted_data = Routing::convertTo($data);
             

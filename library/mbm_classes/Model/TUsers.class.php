@@ -34,7 +34,7 @@ class Model_TUsers extends TUsers {
 
         $qb->add('select', 'u')
                 ->add('from', 'TUsers u')
-                ->add('where', 'u.username =?1');
+                ->add('where', 'u.username = ?1');
 
         $qb->setParameters(array(1 => $username));
 
@@ -44,7 +44,7 @@ class Model_TUsers extends TUsers {
 
         return $user;
     }
-    
+
     static function getUserById($user_id = 0) {
 
         $query = Config::get('DBR')->createQuery("SELECT u FROM TUsers u");
