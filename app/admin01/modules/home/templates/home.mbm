@@ -1,1 +1,11 @@
-home
+
+<?php require_once TEMPLATE_DIR . 'admin/atina/content_nav2.mbm'; ?>
+
+
+<div class="divider"><div><span></span></div></div>
+
+<?php require_once TEMPLATE_DIR . 'admin/atina/content_nav3.mbm'; ?>
+
+
+<div class="divider"><div><span></span></div></div>
+home page

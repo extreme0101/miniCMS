@@ -59,6 +59,10 @@ global $session, $config, $log, $Core, $GET, $POST;
 
 /* @var undsen tohirgoog idevhjuulj bna */
 $Core = new Core($mbm_config);
+
+//inlcude mbm_functions
+File::getAndIncludePHPFiles(LIB_DIR.'mbm_functions'.DS);
+
 //rewrite module zoriulan GET-g tohiruulah
 $GET = $Core->GET;
 $POST = $Core->POST;

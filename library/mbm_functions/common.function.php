@@ -21,6 +21,17 @@ function _clean($txt = '') {
 
     return $txt;
 }
+/**
+ * echo command iin orond hereglene
+ * 
+ * @param String $txt Ugugduh utga
+ * @return string
+ */
+function _echo($txt = '') {
+
+
+    return $txt;
+}
 
 /**
  * undsen core uudad hereglegdej bgaa tul tusad n gargaj hadgalav. mun tusad include hiij bgaa bolno
