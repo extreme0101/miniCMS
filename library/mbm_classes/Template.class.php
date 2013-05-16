@@ -61,6 +61,8 @@ class Template {
         $array['MODULE'] = Config::get('module');
         $array['ACTION'] = Config::get('action');
         $array['CONFIG'] = Config::$data;
+        $array['mbm_session'] = $_SESSION;
+        
         Log::save('Loaded template file: '.$template_file);
         Log::save("config : ".Config::get('app')."/".Config::get('module')."/".Config::get('action'));
         return self::set($template_data, $config->twig->render($template_file, $array));
