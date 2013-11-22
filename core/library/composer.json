@@ -1,0 +1,10 @@
+{
+    "require": {
+	"mustache/mustache": "~2.1",
+	"sybio/image-workshop": "2.*",
+	"ezyang/htmlpurifier":	     "4.5.*",
+        "doctrine/dbal":             "2.*",
+	"doctrine/orm":		     "2.*"
+    },
+    "minimum-stability": "stable"
+}
